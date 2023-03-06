@@ -1,0 +1,6 @@
+[02-Jan-2019 07:07:08 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/shindesunil/public_html/smnew/config.php on line 8
+[02-Jan-2019 07:07:08 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/shindesunil/public_html/smnew/access/studentapplynow.php on line 49
+[02-Jan-2019 07:07:08 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/shindesunil/public_html/smnew/access/studentapplynow.php on line 50
+[09-Jan-2019 06:57:37 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/shindesunil/public_html/smnew/config.php on line 8
+[09-Jan-2019 06:57:37 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/shindesunil/public_html/smnew/access/studentapplynow.php on line 49
+[09-Jan-2019 06:57:37 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/shindesunil/public_html/smnew/access/studentapplynow.php on line 50

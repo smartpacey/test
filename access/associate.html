@@ -1,0 +1,230 @@
+﻿
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta charset="utf-8"><title>
+	Untitled Document
+</title><link href="..\css\fonts.css" rel="stylesheet"><link href="..\css\bootstrap.css" rel="stylesheet"><link href="..\css\main.css" rel="stylesheet"><link href="..\css\pages.css" rel="stylesheet"><link href="..\css\navigation.css" rel="stylesheet"><link href="..\css\smk-accordion.css" rel="stylesheet"><link href="..\css\responsive.css" rel="stylesheet">
+    
+    <style>
+        body { background: none; margin: 0; padding: 0; }
+        #rblAcademies label{font-size: 12px;padding-bottom:5px!important;cursor:pointer;}
+        #rblAcademies td{padding-bottom:5px!important;width:100%;}
+        #rblAcademies td:hover{background: #b5deff;font-weight:bold;}
+    </style>
+    <script src="..\js\jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" lang="javascript">
+        var specialKeys = new Array();
+        specialKeys.push(8); //Backspace
+        function IsNumeric(evt) {
+            var charCode = (evt.which) ? evt.which : event.keyCode
+            if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+                return false;
+            }
+            return true;
+        }
+
+        function Validation1() {
+            debugger;
+            var vtxtName = document.getElementById('txtName');
+            var vtxtEmail = document.getElementById('txtEmail');
+            var vtxtPhone = document.getElementById('txtPhone');
+            /*var vtxtState = document.getElementById('txtState');
+            var vtxtCity = document.getElementById('txtCity');*/
+            var vtxtState = document.getElementById('ddlState');
+            var vtxtCity = document.getElementById('ddlCity');
+            var vddlCourse = document.getElementById('ddlCourse');
+            var vCourse = vddlCourse.options[vddlCourse.selectedIndex].value;
+            var vtxtQuery = document.getElementById('txtQuery');
+            var vtxtOTP = document.getElementById('txtOTP');
+            var vReturnValue = true;
+            if (vtxtName.value == "") {
+                vtxtName.style.borderColor = "#FF0000"
+                vReturnValue = false;
+            }
+            else {
+                vtxtName.style.borderColor = "#d3d3d3"
+            }
+            if (vtxtEmail.value == "") {
+                vtxtEmail.style.borderColor = "#FF0000"
+                vReturnValue = false;
+            }
+            else {
+                if (/^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/.test(vtxtEmail.value)) {
+                    //if (/^[A-Za-z]+[A-Za-z0-9_\-\.]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,100}$/.test(vtxtEmail.value)) {
+                    vtxtEmail.style.borderColor = "#d3d3d3"
+                }
+                else {
+                    vtxtEmail.style.borderColor = "#FF0000"
+                    vReturnValue = false;
+                }
+            }
+            if (vtxtPhone.value == "") {
+                vtxtPhone.style.borderColor = "#FF0000"
+                vReturnValue = false;
+            }
+            else {
+                vtxtPhone.style.borderColor = "#d3d3d3"
+            }
+            if (vtxtState.value == "0") {
+                vtxtState.style.borderColor = "#FF0000"
+                vReturnValue = false;
+            }
+            else {
+                vtxtState.style.borderColor = "#d3d3d3"
+            }
+            if (vtxtCity.value == "0") {
+                vtxtCity.style.borderColor = "#FF0000"
+                vReturnValue = false;
+            }
+            else {
+                vtxtCity.style.borderColor = "#d3d3d3"
+            }
+            if (vCourse == "0") {
+                vddlCourse.style.borderColor = "#FF0000"
+                vReturnValue = false;
+            }
+            else {
+                vddlCourse.style.borderColor = "#d3d3d3"
+            }
+            if (vtxtQuery.value == "") {
+                vtxtQuery.style.borderColor = "#FF0000"
+                vReturnValue = false;
+            }
+            else {
+                vtxtQuery.style.borderColor = "#d3d3d3"
+            }
+            if (vtxtOTP.value == "") {
+                vtxtOTP.style.borderColor = "#FF0000"
+                vReturnValue = false;
+            }
+            else {
+                vtxtOTP.style.borderColor = "#d3d3d3"
+            }
+            return vReturnValue;
+        }
+
+        function ddlcityChange() {
+            alert("Called");
+            var vCity = document.getElementById('ddlCity');
+            if (vCity.value == "-1" || vCity.value == "0") {
+                document.getElementById('divAcademies').style.display = "none";
+            }
+            else {
+                document.getElementById('divAcademies').style.display = "block";
+            }
+        }
+
+        function SendOTP() {
+            var number = document.getElementById('txtPhone').value;
+            if (number.trim() != '') {
+                
+                $.ajax({
+                    type: "POST",
+                    datatype: "Json",
+                    contentType: "application/json;charset=utf-8",
+                    url: "studentapplynow.aspx/SendOTP",
+                    data: "{'Phone':'" + number + "'}",
+                    success: function (data) {
+                        if (data.d == 1) {
+                            alert('OTP Sent on number : ' + number + ' . Kindly enter it to verify your number.');
+                            $('#txtOTP').focus();
+                        }
+                        else if (data.d == 99) {
+                            alert('Maximum 3 Attempts Allowed');
+                        }
+                    }
+                });
+            }
+        }
+    </script>
+</head>
+<body>
+    <form method="post" action="./studentapplynow.aspx" id="form1">
+        <div class="row">
+            <div class="w50left">
+                <input name="txtName" type="text" maxlength="40" id="txtName" tabindex="1" placeholder="First Name " required="">
+            </div>
+            <div class="w50right">
+                <input name="txtOTP" type="text" maxlength="6" id="txtOTP" tabindex="5" onkeypress="return IsNumeric(event);" placeholder="Middle Name ">
+            </div>
+            <div class="clear"></div>
+            <div class="w50left">
+                <input name="txtName" type="text" maxlength="40" id="txtName" tabindex="1" placeholder="Last Name" required="">
+            </div>
+            <div class="w50right">
+                <input name="txtOTP" type="date" maxlength="6" id="txtOTP" tabindex="5" onkeypress="return IsNumeric(event);" placeholder="OTP">
+            </div>
+            <div class="clear"></div>
+            <div class="w50left">
+                <input name="txtName" type="text" maxlength="40" id="txtName" tabindex="1" placeholder="Mobile No." required="">
+            </div>
+            <div class="w50right">
+                <input name="txtOTP" type="text" maxlength="6" id="txtOTP" tabindex="5" onkeypress="return IsNumeric(event);" placeholder="Address">
+            </div>
+            <div class="clear"></div>
+            <div class="w50left">
+                <input name="txtName" type="text" maxlength="40" id="txtName" tabindex="1" placeholder="City" required="">
+            </div>
+            <div class="w50right">
+                <input name="txtOTP" type="text" maxlength="6" id="txtOTP" tabindex="5" onkeypress="return IsNumeric(event);" placeholder="Pin Code">
+            </div>
+            <div class="clear"></div>
+            <div class="w50left">
+                <input name="txtName" type="text" maxlength="40" id="txtName" tabindex="1" placeholder="Bank A/C No" required="">
+            </div>
+            <div class="w50right">
+                <input name="txtOTP" type="text" maxlength="6" id="txtOTP" tabindex="5" onkeypress="return IsNumeric(event);" placeholder="Bank Branch">
+            </div>
+            <div class="clear"></div>
+            <div class="w50left">
+                <input name="txtName" type="text" maxlength="40" id="txtName" tabindex="1" placeholder="Bank IFSC " required="">
+            </div>
+            <div class="w50right">
+                <input name="txtOTP" type="text" maxlength="6" id="txtOTP" tabindex="5" onkeypress="return IsNumeric(event);" placeholder="Pancard No">
+            </div>
+            <div class="clear"></div>
+            <div class="w50left">
+                <input name="txtName" type="text" maxlength="40" id="txtName" tabindex="1" placeholder="D.D. Date" required="">
+            </div>
+            <div class="w50right">
+                <input name="txtOTP" type="text" maxlength="6" id="txtOTP" tabindex="5" onkeypress="return IsNumeric(event);" placeholder="D.D. No">
+            </div>
+            <div class="clear"></div>
+            <div class="w50left">
+                <input name="txtName" type="text" maxlength="40" id="txtName" tabindex="1" placeholder="Bank of D.D" required="">
+            </div>
+            <div class="w50right">
+                <input name="txtOTP" type="text" maxlength="6" id="txtOTP" tabindex="5" onkeypress="return IsNumeric(event);" placeholder="D.D. Amount">
+            </div>
+            <div class="clear"></div>
+            <div class="w50left">
+                <input name="txtName" type="text" maxlength="40" id="txtName" tabindex="1" placeholder="Nominee Name" required="">
+            </div>
+            <div class="w50right">
+                <input name="txtOTP" type="text" maxlength="6" id="txtOTP" tabindex="5" onkeypress="return IsNumeric(event);" placeholder="Nominee Relation">
+            </div>
+            <div class="clear"></div>
+            <div class="w50left">
+                <input name="txtName" type="text" maxlength="40" id="txtName" tabindex="1" placeholder="Course" required="">
+            </div>
+            <div class="w50right">
+                <input name="txtOTP" type="text" maxlength="6" id="txtOTP" tabindex="5" onkeypress="return IsNumeric(event);" placeholder="Sponsor ID">
+            </div>
+            <div class="clear"></div>
+            <div class="w50left">
+                <input name="txtName" type="text" maxlength="40" id="txtName" tabindex="1" placeholder="Top Id" required="">
+            </div>
+            <div class="w50right">
+                <input name="txtOTP" type="text" maxlength="6" id="txtOTP" tabindex="5" onkeypress="return IsNumeric(event);" placeholder="Position">
+            </div>
+            <div class="clear"></div>
+
+            <a onclick="return Validation1();" id="btnSubmit" tabindex="10" class="bttn" href="javascript:__doPostBack(&#39;btnSubmit&#39;,&#39;&#39;)">Submit<i class="fa flaticon-envelope4"></i></a>
+            
+        </div>
+        
+    </form>
+</body>
+</html>
