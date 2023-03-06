@@ -1,0 +1,26 @@
+.smk_accordion{position:relative; margin:0; padding:0; list-style:none; margin-bottom:20px;}
+/***----------------------------*Section*----------------------------------***/
+.smk_accordion .accordion_in{position:relative; margin-top:-1px; overflow:hidden; padding:3px 0 4px;}
+/***----------------------------*Head*----------------------------------***/
+.smk_accordion .accordion_in .acc_head{position:relative; background:#ccc; padding:9px 10px; font-size:16px; display: block; cursor:pointer;}
+.smk_accordion .accordion_in .acc_head .acc_icon_expand{display:block; width:26px; height:26px; position: absolute;left:0; top:0; background:transparent url("../images/plus-minus.png") no-repeat scroll center 0px; background-color: #2c3e50; padding:20px; border-radius:3px 0 0 3px;}
+/***----------------------------*Content*----------------------------------***/
+.smk_accordion .accordion_in .acc_content{color:#000; padding:10px; background:#fff;}
+.smk_accordion .accordion_in .acc_content p{font-size:14px;}
+.smk_accordion .accordion_in .acc_content h1:first-of-type,
+.smk_accordion .accordion_in .acc_content h2:first-of-type,
+.smk_accordion .accordion_in .acc_content h3:first-of-type,
+.smk_accordion .accordion_in .acc_content h4:first-of-type,
+.smk_accordion .accordion_in .acc_content h5:first-of-type,
+.smk_accordion .accordion_in .acc_content h6:first-of-type{margin-top:5px;}
+/***----------------------------*General*----------------------------------***/
+ .smk_accordion .accordion_in .acc_head {background:#F9F9F9; border-radius:3px; padding-left:60px; color:#2C3E50;}
+.smk_accordion .accordion_in:first-of-type,
+.smk_accordion .accordion_in:first-of-type .acc_head {}
+.smk_accordion .accordion_in:last-of-type,
+.smk_accordion .accordion_in:last-of-type .acc_content{border-radius:0;}
+.smk_accordion .accordion_in.acc_active > .acc_content{display:block;}
+.smk_accordion .accordion_in.acc_active > .acc_head{background:#F9F9F9; color:#11B5D3;}
+.smk_accordion .accordion_in.acc_active > .acc_head .acc_icon_expand{background: url(../images/plus-minus.png) no-repeat center -41px; background-color: #11B5D3;}
+.smk_accordion.acc_with_icon .accordion_in .acc_head,
+.smk_accordion.acc_with_icon .accordion_in .acc_content{}

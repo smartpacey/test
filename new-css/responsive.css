@@ -1,0 +1,64 @@
+@media screen and (max-width:1024px){
+	li.banner-slide img{width:100%;}
+	.banner-form{width:92%;}
+	.banner-form-box{padding:7px; margin-top:4px;}
+	.banner-form-box input[type="text"], 
+	.banner-form-box input[type="email"], 
+	.banner-form-box input[type="tel"],
+	.banner-form-box textarea{margin-bottom:3px;}
+	ul.banner{min-height:277px;}
+	.training-partner-logos li{width:166px;}
+}
+
+@media screen and (max-width:992px){
+	body{font-size:14px;}
+	.navbar-brand.education-logo{top:-8px; width:88px;}
+	.nav > li > a{padding:10px;}
+	#banner{margin-top:70px;}
+	ul.banner{min-height:207px;}
+	li.banner-slide img{width:100%;}	
+	ol.banner-markers{display:none;}
+	.banner-form{position:inherit; width:100%; float:left; background:#f5f5f5; border-top:2px solid #000;}
+	.banner-form-box{width:100%; margin:0;}
+	.traning-partners h2{font-size:25px; margin-top:10px;}
+	.training-partner-logos{width:100%; padding:0; text-align:center;}
+	.training-partner-logos li{float:none; display:inline-block; width:18%;}
+	.information{}
+	.information h1{margin-bottom:0; font-size:28px;}
+	.footer_widgets .gallery-box{padding:5px 0 0 0;}
+	footer iframe{height:630px;}
+}
+@media screen and (max-width:768px){	
+	#banner{margin-top:78px;}
+	ul.banner{min-height:207px;}
+	footer iframe{height:630px;}
+	.training-partner-logos li{float:none; display:inline-block; width:18%;}
+	
+}
+@media screen and (max-width:767px){
+	.navbar-default .navbar-nav > li > a{border-bottom:1px solid #e4e4e4;}
+	.navbar-default .navbar-nav > li > a:hover{background:#e4e4e4;}
+	#banner{margin-top:78px;}
+	ul.banner{min-height:194px;}
+	footer iframe{height:596px;}
+	.training-partner-logos li{width:17%;}
+	
+}
+@media screen and (max-width:639px){
+	#banner{margin-top:78px;}
+	ul.banner{min-height:194px;}
+	footer iframe{height:622px;}
+	
+}
+@media screen and (max-width:480px){
+	#banner{margin-top:78px;}
+	ul.banner{min-height:130px;}
+	footer iframe{height:610px;}
+	
+}
+@media screen and (max-width:479px){
+	#banner{margin-top:100px;}
+	ul.banner{min-height:165px;}
+	footer iframe{height:682px;}
+	.training-partner-logos li{width:46%;}
+}
