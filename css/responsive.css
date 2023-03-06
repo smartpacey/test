@@ -1,0 +1,142 @@
+@media only screen  and (min-width : 1824px) {
+/* Styles */
+}
+
+@media only screen  and (max-width : 1224px) {
+/* Styles */
+	#slideshow { width: 95%; }
+	 .updates .announce i { font-size: 30px; }
+	 .updates .icon-i1-text { padding: 5px 0; }
+	 .updates .icon-i1-text h2 { font-size: 20px;}
+	.portal .portal-box { padding: 0px 15px; }
+	ul.soft-train li span { display: -moz-deck; display: -webkit-box;  width: 80%; }
+	.method { background: url(../images/graph_line2.png) no-repeat 20px 72px }
+	
+	.our-softwares figure img { width:100%; }
+	
+	.inputs-box span { width: 26%;}
+	.inputs-box input, .contact .inputs-box textarea { width: 70%; }
+	.inputs-box .textarea-field  span { width: 15%; }
+	.inputs-box span.state { width: 37% !important; } .inputs-box input.state { width: 63% !important; }
+	
+	.ftr_row .footer_widgets .gallery-box { float: left; width: 100%;  padding: 0;}
+	.ftr_row .footer_widgets ul.post li figure { width: 25%; }
+	.ftr_row .footer_widgets ul.post li figcaption { width: 75%; }
+	
+	.prtnrs-cntct { margin: 0; }
+	.prtnrs-cntct .bind-box1 { width: 100%; padding: 0 0 5px 0 }
+	.prtnrs-cntct .bind-box2 { width: 100%; padding: 5px 0 0 0  }
+	.prtnr-logo .prtnrlogo-images { width: 62%; }
+	
+	/* ADMIN STYLE */
+	.login-main { padding: 0 33%; }
+	.admin .student_left .student_left_menu { padding: 20% 10%;  }
+	.admin .partner_right .partner_right_menu { padding: 20% 10%;  }
+}
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px), @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+/* Styles */
+}
+
+
+
+@media only screen and (max-width : 480px) and (min-width : 250px) {
+/* Styles */
+	.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9{ float: left; width: 100%; position:relative;min-height:1px;padding-right:15px;padding-left:15px }
+	.w50left, .w50right { float: left; width: 100%; padding: 5px 0 !important; }
+	h1 { font-size: 25px } h2 { font-size: 25px } h3 { font-size: 22px } h4 { font-size: 24px } h5 { font-size: 20px } h6 { font-size: 18px }
+	
+	.wrapper { width: 95% }
+	ul.points li { font-size: 13px; }
+	ul.points li i { font-size: 12px; }
+	ul.points li span { font-size: 13px; display: -moz-deck; display: -webkit-box;  width: 85%; }
+	ul.points1 li i { font-size: 12px; }
+	ul.points1 li span { font-size: 13px; }
+	ul.soft-train li a { font-size: 13px }
+	.top-bar .top-social { float: left; width: 100%; text-align: center; }
+	header menu .logo { width: 150px }
+	
+	#slideshow { width: 98% }
+	.pics p { font-size: 14px}
+	.updates .icon-i1-text { float: left; padding: 10px 0 }
+	.updates .announce i { font-size: 35px } 
+	
+	.course-box { float: left; padding: 5px 0px }
+	
+	.portal .portal-box { float: inherit; padding: 10px 0px 20px 0; text-align: center; width: 100% }
+	.portal .icon-i3 { float: none; margin:0px }
+	.portal .icon-i3-text { width: 100%; text-align: center }
+	
+	.who_we_are figure img { width: 100%; }
+	.locate_cntr .cntr_fields { padding: 10px 0 }
+	
+	.con1_detail address { padding: 10px 0px }
+	
+    #slideshow { width: 100%; margin: 0;float: left;overflow: hidden;text-align: left; }
+	.course-box .icon-i2-text h6 { color: #808080; line-height: 30px; font-size: 14px;}
+	.portal .prtnr_enq a.btn { float: left; }
+	
+	footer iframe { height: 690px; }
+	.ftr_row .footer_widgets .quick-box { float: left; width: 100%; margin: 0 0 15px 0; }
+	.ftr_row .footer_widgets .gallery-box { float: left; width: 100%; margin: 0 0 15px 0;}
+	.ftr_row .footer_widgets .gallery-box img { width: 75px; }
+	.ftr_row .footer_widgets ul.post li figure { width: 28%; }
+	.ftr_row .footer_widgets ul.post li figcaption { width: 70%; }
+	.ftr_row .copyright { width: 100%; float: left; text-align: center; line-height: 20px; }
+	.ftr_row .get-social { width: 100%; float: left; text-align: center; }
+	
+	.page_banner .pageview { float: left; padding: 10px 0 0 0 }
+	.vsn-msn .vision-box { float: left; width: 100%; }
+    .vsn-msn .mission-box { float: left; width: 100%; padding: 80px 8.5% 80px 30px; }
+	.desk-msg { width: 100%; }
+	.desk-msg .chairman { float: left; width: 100%; margin: -60px 0 0 0; }
+	.desk-msg .chairman img { width: 100%; height: 100%; margin: 0; }
+	.desk-msg .img-text1 { float: left; width: 100%; padding: 20px 0px 0px 0px; text-align: justify; }
+	
+	.placement-assis { float: left; }
+	.other-course ul li { font-size: 13px; }
+	.other-course ul li:hover {  padding-left:10px; }
+	
+	.method { background: none; }
+	.method ul li { width: 100%; padding: 10px 0; }
+	
+	.opportunity aside { width: 100%; }
+	.opportunity article { width: 100%; }
+	ul.option li { width: 100% }
+	
+	.prtnr-logo .prtnrlogo-text { width: 100%; padding: 70px 8%; }
+	.prtnr-logo .prtnrlogo-text::before { display: none; }
+	.prtnr-logo .prtnrlogo-images { width: 100%; padding: 15px 0; }
+	.prtnr-quiry { padding: 0; }
+	
+	.data table tr td.data-head { width: 100%; font-weight: bold; }
+	.data table tr td.data-dot { display: none; }
+	.data table tr td.data-text { width: 100%; margin: 5px 0 0 0; text-transform: capitalize; }
+	
+	.certificate { padding: 30px 2%; }
+	.contact { padding: 30px 0; }
+	.inputs-box span { width: 36%; font-size: 13px; }
+	.inputs-box input { width: 64%; } 
+    .inputs-box .textarea-field span { width: 35%; }
+	.contact .inputs-box textarea { width: 55%; }
+	.contact-info .info-box { padding: 10px 0; width: 100%; }
+	.contact-info .info-box .icon-c1 { float: left; width: 100%; text-align: center; }
+	.contact-info .info-box .icon-c1-text { float: left; width: 100%; text-align: center; }
+	
+	/* ADMIN STYLE */
+	.login-main { padding: 0 8%; }
+	.admin ul.panel_link li a { font-size: 16px; }
+	.admin ul.panel_link li span { width: 85%; }
+	.admin .student_left { float: left; position: relative; width: 100%; }
+	.admin .student_left .student_left_menu { padding: 20% 8%;  }
+	.admin .partner_right { float: left; position: relative; width: 100%; }
+	.admin .partner_right .partner_right_menu { padding: 20% 8%;  }
+	
+	.header-block { width: 100%; float: left; position: relative; }
+	.vertical-theme { float: left; width: 100%; margin: 0 !important; }
+	
+	/* GALLERY */
+	.view { width: 100%; } .second-effect .mask { width: 100%; }
+	
+}
