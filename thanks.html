@@ -1,0 +1,268 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smartpacey</title>
+<meta name="description" content="Smartpacey follows a vision of empowering people through IT education, professionals with required competencies, skills and make them employable and winner.">
+<meta name="keywords" content="tally, web designing, computer classes, it web">
+<link href="new-css\bootstrap.css" rel="stylesheet" type="text/css">
+<link href="new-css\custom.css" rel="stylesheet" type="text/css">
+<link href="new-css\responsive.css" rel="stylesheet" type="text/css">
+ <!-- Link Swiper's CSS -->
+ <link
+ rel="stylesheet"
+ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+/>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+<!-- <link href="css\main.css" rel="stylesheet"> -->
+<script type="text/javascript">
+    window.onload = function () {
+        OpenBootstrapPopup();
+    };
+    function OpenBootstrapPopup() {
+        $("#simpleModal").modal('show');
+    }
+</script>
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+    .card{
+        margin: 0 10px;
+        width: 300px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid rgb(183, 183, 183);
+        padding: 20px;
+        background: white;
+    }
+
+    .card > img{
+        border-radius: 50%;
+        width: 100px;
+    }
+
+    .card > button{
+        background-color: #007aff;
+        color: white;
+        border: none;
+        border-radius: 30px;
+        padding: 7px 20px;
+    }
+
+    .card > p{
+        text-align: center;
+    }
+
+
+    @media screen and (max-width:600px){
+        .success_stories{
+            flex-direction: column;
+            align-items: center;
+        }
+        .card{
+            margin-bottom: 20px;
+        }
+
+        .thanks-card{
+            width: 100%;
+        }
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 30px;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    
+</style>
+
+
+</head>
+<body style="background-color: rgb(244, 244, 244);">
+
+<!-- <div id="simpleModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+               <img src="images/banner.jpg" class="img-responsive">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<header>
+    <div class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <ul>
+
+                        <li> <a href="register-as-student.html">Enquiry</a></li>
+                        <li><a href="login.html">Student Login</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Franchise<b
+                                    class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="mylinks" href="partner.html">Apply for Franchise</a></li>
+                                <li><a class="mylinks" href="franchise_login.html">Franchise Login</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="container">
+        <div class="row">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand education-logo" href="index.html"><img src="images\logo.png" a></a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html"><img class="icon-home" src="images\icon\home.png"></a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us <b
+                                    class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="about_us.html">About Smartpacey</a></li>
+                                <li><a href="board-of-directors.html">Board of Directors</a></li>
+                                <li><a href="management-team.html">Management Team</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses <b
+                                    class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="advance-diploma.html">Advance Computer Courses</a></li>
+                                <li><a href="certificate-courses.html">Certificate Computer Courses</a></li>
+                                <li><a href="spokenInfo.html">Spoken English</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="leadership.html">Leadership Camp</a></li>
+                        <li><a href="placement.html">Placement</a></li>
+                        <li><a href="verification.html">Validate Certificate</a></li>
+                        <li><a href="download.html">Download</a></li>
+                        <!-- <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Franchise <b
+                                    class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="partner.html">Franchise Opportunity</a></li>
+                                <li><a href="franchise_login.html">Franchise Login</a></li>
+                            </ul>
+                        </li> -->
+                        <li><a href="grievance.php">Grievance Cell</a> </li>
+                        <li><a href="branch.php">Our Branches</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </nav>
+        </div>
+    </div>
+</header>
+<!-- /header end --> 
+
+
+    <div class="container" style="padding-top:100px;display: flex;justify-content: center;padding-top:200px;">
+         <div class="card thanks-card" style="border-radius: 20px;border-color: aqua;">
+            <img src="images/thank-profile.jpg" style="width: 150px !important;height: 150px !important;margin-top: -100px;" alt="">
+            <h2 style="margin-bottom: 0;font-family: 'Bebas Neue', cursive !important;">THANKS!</h2>
+            <h3 style="margin-top: 0;margin-bottom: 0;font-family: 'Bebas Neue', cursive !important;color:rgb(128, 128, 128);">DISHANT ARAK</h3>
+            <h4 style="text-align: center;margin-top: 10px;font-weight: bold;line-height: 12px;">For submitting you details</h4>
+            <p style="font-size: 10px;line-height: 15px;"> Our cereer counsellor will get in touch with you for assistance and help you to chose best career option</p>
+            <div style="border-radius: 20px;border-color: aqua;width: 100%;">
+                <h5 style="text-align: center;font-weight: bold;font-size: 12px;">Know more about:</h5>
+                <div style="border-radius: 5px;border:1px solid aqua;padding: 5px;width: 100%;display: flex;align-items: center;justify-content: space-between;">
+                    <img src="./images/doc.png" width="30px" style="border-radius: 50%;" alt="">
+                    <p style="font-size: 9px;margin-left: 10px;line-height: 14px;">
+                       <b> Smartpacey provide:</b><br> 
+                        Free of cost leadership development program <br>
+                        Only for selected students
+                    </p>
+                    <i class='bx bxs-chevrons-right' style="color:#007aff"></i>
+                </div>
+                <p style="font-size: 8px;margin-top: 5px;line-height: 12px;">Smartpacey provide Qulity Computer Education and empower students to make them ready to work in industry or to start their own business. 
+                   <br> Note: Please read Terms & Condition before Admission process.</p>
+            </div>
+         </div>
+    </div>
+
+
+<!-- 
+<footer>
+    <div class="footer_follow">
+        <div class="container">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <div class="copyright">
+                    Copyright © 2023 - <a href="http://www.smartpaceytech.com/" target="_blank">Smartpacey Technology</a> | All Rights Reserved 
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="get-social">
+                    <ul>
+                        <li><a href="https://www.facebook.com/smartpaceyinfotech" target="_blank" class="fbook-icon"><i class="fa flaticon-facebook25"></i></a></li>
+                        <li><a href="https://twitter.com/SmartPacey" target="_blank" class="twt-icon"><i class="fa flaticon-twitter16"></i></a></li>
+                        <li><a href="#" class="gplus-icon"><i class="fa flaticon-google26"></i></a></li>
+                        <li><a href="#" class="gplus-icon"><i class="fa flaticon-google26"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <br /><br /><br />
+    </div> 
+</footer> -->
+
+
+
+<!-- Js Files -->
+
+</body>
+</html>

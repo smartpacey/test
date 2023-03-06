@@ -1,0 +1,1117 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartpacey</title>
+    <meta name="description"
+        content="Smartpacey follows a vision of empowering people through IT education, professionals with required competencies, skills and make them employable and winner.">
+    <meta name="keywords" content="tally, web designing, computer classes, it web">
+    <link href="new-css\bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="new-css\custom.css" rel="stylesheet" type="text/css">
+    <link href="new-css\responsive.css" rel="stylesheet" type="text/css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- <link href="css\main.css" rel="stylesheet"> -->
+    <script type="text/javascript">
+        window.onload = function () {
+            OpenBootstrapPopup();
+        };
+        function OpenBootstrapPopup() {
+            $("#simpleModal").modal('show');
+        }
+    </script>
+
+
+    <style>
+        .card {
+            margin: 0 10px;
+            width: 300px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgb(183, 183, 183);
+            padding: 20px;
+            background: white;
+        }
+
+        .card>img {
+            border-radius: 50%;
+            width: 100px;
+        }
+
+        .card>button {
+            background-color: #007aff;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            padding: 7px 20px;
+        }
+
+        .card>p {
+            text-align: center;
+        }
+
+
+        @media screen and (max-width:600px) {
+            .success_stories {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                margin-bottom: 20px;
+            }
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 30px;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+
+        .whatsapp-btn {
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            bottom: 200px;
+            right: 20px;
+            color: white;
+            background: #25d366;
+            font-size: 25px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2;
+        }
+
+        .yt-btn {
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            color: white;
+            background: #c4302b;
+            font-size: 25px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2;
+        }
+
+
+        .phone-btn {
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            color: white;
+            background: #2553d3;
+            font-size: 25px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2;
+        }
+
+        .insta-btn {
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            bottom: 140px;
+            right: 20px;
+            color: white;
+            background: #f09433;
+            background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+
+            font-size: 25px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2;
+        }
+
+
+
+        .whatsapp-btn:hover {
+            text-decoration: none;
+            color: white;
+        }
+
+        .insta-btn:hover {
+            text-decoration: none;
+            color: white;
+        }
+
+        .phone-btn:hover {
+            text-decoration: none;
+            color: white;
+        }
+
+        .yt-btn:hover {
+            text-decoration: none;
+            color: white;
+        }
+
+
+        #pulse {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background-color: #25d366;
+            border-radius: 50%;
+            animation: pulse 0.7s linear infinite;
+        }
+
+
+        #pulse2 {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background: #f09433;
+            background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+            border-radius: 50%;
+            animation: pulse 0.7s linear infinite;
+        }
+
+
+        #pulse3 {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background-color: #2553d3;
+            border-radius: 50%;
+            animation: pulse 0.7s linear infinite;
+        }
+
+        #pulse4 {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background-color: #c4302b;
+            border-radius: 50%;
+            animation: pulse 0.7s linear infinite;
+        }
+
+        .bxl-whatsapp {
+            z-index: 3;
+        }
+
+        .bxl-instagram {
+            z-index: 3;
+        }
+
+        .bx-phone {
+            z-index: 3;
+        }
+
+        .bxl-youtube {
+            z-index: 3;
+        }
+
+
+        @keyframes pulse {
+            from {
+                transform: scale(1);
+            }
+
+            to {
+                transform: scale(1.3);
+                opacity: 0;
+            }
+        }
+
+        .entry-btn {
+            color: black;
+            background-color: rgb(206, 206, 206);
+            border: 5px solid transparent;
+            position: fixed;
+            transform: rotate(90deg);
+            top:70%;
+            z-index: 10;
+            left: -34px;
+        }
+
+        .mylinks{
+            color: black !important;
+        }
+
+        .mylinks:hover{
+            color: white !important;
+        }
+       
+    </style>
+
+
+</head>
+
+<body>
+
+    <a href="#" class="whatsapp-btn"><span id="pulse"></span> <i class='bx bxl-whatsapp'></i></a>
+    <a href="#" class="insta-btn"><span id="pulse2"></span> <i class='bx bxl-instagram'></i></a>
+    <a href="#" class="phone-btn"><span id="pulse3"></span> <i class='bx bx-phone'></i></a>
+    <a href="#" class="yt-btn"><span id="pulse4"></span> <i class='bx bxl-youtube'></i></a>
+    <!-- <a class="btn-link entry-btn" href="register-as-student.html">Entrance</a> -->
+
+    <!-- <div id="simpleModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+               <img src="images/banner.jpg" class="img-responsive">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <ul>
+
+                            <li> <a href="register-as-student.html">Enquiry</a></li>
+                            <li><a href="login.html">Student Login</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Franchise<b
+                                        class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="mylinks" href="partner.html">Apply for Franchise</a></li>
+                                    <li><a class="mylinks" href="franchise_login.html">Franchise Login</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand education-logo" href="index.html"><img src="images\logo.png" a></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="index.html"><img class="icon-home" src="images\icon\home.png"></a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us <b
+                                        class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="about_us.html">About Smartpacey</a></li>
+                                    <li><a href="board-of-directors.html">Board of Directors</a></li>
+                                    <li><a href="management-team.html">Management Team</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses <b
+                                        class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="advance-diploma.html">Advance Computer Courses</a></li>
+                                    <li><a href="certificate-courses.html">Certificate Computer Courses</a></li>
+                                    <li><a href="spokenInfo.html">Spoken English</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="leadership.html">Leadership Camp</a></li>
+                            <li><a href="placement.html">Placement</a></li>
+                            <li><a href="verification.html">Validate Certificate</a></li>
+                            <li><a href="download.html">Download</a></li>
+                            <!-- <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Franchise <b
+                                        class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="partner.html">Franchise Opportunity</a></li>
+                                    <li><a href="franchise_login.html">Franchise Login</a></li>
+                                </ul>
+                            </li> -->
+                            <li><a href="grievance.php">Grievance Cell</a> </li>
+                            <li><a href="branch.php">Our Branches</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- /header end -->
+
+    <!-- Slider section-->
+    <div id="banner">
+        <ul class="banner">
+            <li><img src="images\banner\b2.png" class="img-responsive"></li>
+            <li><img src="images\banner\b2.png" class="img-responsive"></li>
+            <li><img src="images\banner\b2.png" class="img-responsive"></li>
+            <li><img src="images\banner\b2.png" class="img-responsive"></li>
+            <li><img src="images\banner\b2.png" class="img-responsive"></li>
+        </ul>
+    </div><!-- End Slider-->
+    <div class="news-update">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+                    <h4>"Committed To Excellence In IT Education"</h4>
+                    <ul id="marquee" class="marquee">
+                        <!--14052018-->
+                        <li><em><strong>Turn Your Ambition With Smartpacey Into Accomplishment.</strong></em></li>
+                        <li><em><strong>Career Guidance & Training for IT Student with LETEST TECHNOLOGIES</strong></em>
+                        </li>
+                        <li><em><strong>Join Leadership Development Camp for Better Future</strong></em></li>
+                        <li><em><strong>India's Leading Brand in IT Education Sector</strong></em></li>
+                    </ul>
+                </div>
+                <!-- <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12" style="display: flex;justify-content: center;">
+                    <a class="btn-link entry-btn" href="register-as-student.html">Entrance</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="traning-partners">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align: center;">
+                    <h2 class="text-center">Smartpacey Group</h2>
+                    <ul class="training-partner-logos">
+                        <li><a href="leadership.html"><img src="images\partner1.png"></a></li>
+                        <li><a href="https://www.smartpaceytech.com"><img src="images\partner2.png"></a></li>
+                        <li><a href="placement.html"><img src="images\spplacement.png"></a></li>
+                    </ul>
+
+                    <ul class="training-partner-logos">
+                        <li><a href="#"><img src="images\partner4.png"></a></li>
+                        <li><a href="#"><img src="images\partner5.png"></a></li>
+                    </ul>
+                    <!-- <div class="partners" style="display: flex;justify-content: center;flex-wrap: wrap;">
+                        <a href="#"><img width="200px" height="70px" style="border: 5px solid #e4e4e4;" src="images\partner1.png"></a>
+                        <a href="#"><img width="200px" height="70px" style="border: 5px solid #e4e4e4;" src="images\partner2.png"></a>
+                        <a href="#"><img width="200px" height="70px" style="border: 5px solid #e4e4e4;" src="images\spplacement.png"></a>
+                        <a href="#"><img width="200px" height="70px" style="border: 5px solid #e4e4e4;" src="images\partner4.png"></a>
+                        <a href="#"><img width="200px" height="70px" style="border: 5px solid #e4e4e4;" src="images\partner5.png"></a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="information">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6col-sm-6 col-xs-12">
+                    <h1>Welcome To Smartpacey</h1>
+                    <p>In India and abroad lot of investments are being made by several companies in the field of
+                        software, hardware, networking and web technology. Due to this, thousands of job opportunities
+                        will be available in several companies. Smartpacey has designed special application oriented
+                        computer training programs to enable the students to serve these companies. Every student must
+                        get benefit of this world class computer education by Smartpacey Institute & Technology solution
+                        Pvt. Ltd.<br>
+                        Smartpacey is established in the year 2016 and is backed up by highly experienced professionals
+                        in concerned fields. Smartpacey is mainly known for our quality and in time services to students
+                        and business partners which positively effects on business growth of business partners.<br>
+                        To empower girls/ladies we are giving special motivation to female candidates and they are
+                        joining our training programs and taking benefit of our skill based courses.
+                    </p>
+                    <p class="tagline">"Turn Your Ambition With Smartpacey Into Accomplishment."</p>
+                    <br>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <br>
+                    <img src="images\student.png">
+                    <!-- <iframe width="100%" height="315" src="https://www.youtube.com/embed/ogJ-FvSxqWg"
+                    title="YouTube video player" frameborder="0" allow="" allowfullscreen></iframe> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="academy-vission">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+                    <h3>Smartpacey Vision</h3>
+                    <div class="section_title_line2"></div>
+                    <p>Smartpacey follows a vision of empowering people through IT education, professionals with
+                        required competencies, skills and make them employable and winner. To be the most preferred
+                        educational and training institute and evolve into a world class Organization.To Develop
+                        Smartpacey Branch in all India for build a strong community of Young Entrurpreuner across the
+                        country by inspired to young for start own business.</p>
+                   
+                    <!-- <iframe width="100%" height="315" src="https://www.youtube.com/embed/ogJ-FvSxqWg"
+                        title="YouTube video player" frameborder="0" allow="" allowfullscreen></iframe> -->
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <h3>Smartpacey Mission</h3>
+                    <div class="section_title_line2"></div>
+                    <p>To provide world class Computer Education at very affordable cost and empower students to make
+                        them ready to work in industry or to start their own business.</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+              
+    <div class="career-prefer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <h3>Career Oriented Courses</h3>
+                    <a href="adwd.html">
+                        <span class="course-box">
+                            <span class="icon-i2">1</span>
+                            <span class="icon-i2-text">Advance Diploma in Web Designing</span>
+                        </span>
+                    </a>
+                    <a href="accounting.html">
+                        <span class="course-box">
+                            <span class="icon-i2">2</span>
+                            <span class="icon-i2-text">Advance Diploma in Financial Accounting</span>
+                        </span>
+                    </a>
+                    <a href="software.html">
+                        <span class="course-box">
+                            <span class="icon-i2">3</span>
+                            <span class="icon-i2-text">Advance Diploma in Software Development</span>
+                        </span>
+                    </a>
+                    <a href="hardware.html">
+                        <span class="course-box">
+                            <span class="icon-i2">4</span>
+                            <span class="icon-i2-text">Advance Diploma in Hardware &Networking </span>
+                        </span>
+                    </a>
+                    <a href="advance-diploma.html">
+                        <span class="course-box">
+                            <span class="icon-i2">5</span>
+                            <span class="icon-i2-text">Full Stack Development Program</span>
+                        </span>
+                    </a>
+                    <a href="advance-diploma.html">
+                        <span class="course-box">
+                            <span class="icon-i2">6</span>
+                            <span class="icon-i2-text">Advance Diploma in Android Development</span>
+                        </span>
+                    </a>
+                    <a href="advance-diploma.html">
+                        <span class="course-box">
+                            <span class="icon-i2">7</span>
+                            <span class="icon-i2-text">Diploma in Computer Teacher Education</span>
+                        </span>
+                    </a>
+                    <a href="advance-diploma.html">
+                        <span class="course-box">
+                            <span class="icon-i2">8</span>
+                            <span class="icon-i2-text">Diploma in Software Applications </span>
+                        </span>
+                    </a>
+                    <a href="advance-diploma.html">
+                        <span class="course-box">
+                            <span class="icon-i2">9</span>
+                            <span class="icon-i2-text">Diploma in Corporate IT Leady</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <h3>Certificate Courses</h3>
+                    <a href="certificate-courses.html">
+                        <span class="course-box">
+                            <span class="icon-i2">1</span>
+                            <span class="icon-i2-text">Certificate Course in MS-Office (CMSO)</span>
+                        </span>
+                    </a>
+                    <a href="certificate-courses.html">
+                        <span class="course-box">
+                            <span class="icon-i2">2</span>
+                            <span class="icon-i2-text">Certificate Course in Tally Prime with GST</span>
+                        </span>
+                    </a>
+                    <a href="certificate-courses.html">
+                        <span class="course-box">
+                            <span class="icon-i2">3</span>
+                            <span class="icon-i2-text">Certificate Course in Digital Citizen (CCDC)</span>
+                        </span>
+                    </a>
+                    <a href="certificate-courses.html">
+                        <span class="course-box">
+                            <span class="icon-i2">4</span>
+                            <span class="icon-i2-text">Certificate Course in Advance Excel</span>
+                        </span>
+                    </a>
+                    <a href="certificate-courses.html">
+                        <span class="course-box">
+                            <span class="icon-i2">5</span>
+                            <span class="icon-i2-text">Computer Awareness Program (CAP)</span>
+                        </span>
+                    </a>
+                    <a href="certificate-courses.html">
+                        <span class="course-box">
+                            <span class="icon-i2">6</span>
+                            <span class="icon-i2-text">Certificate Course in DTP with Graphic Designing</span>
+                        </span>
+                    </a>
+                    <a href="certificate-courses.html">
+                        <span class="course-box">
+                            <span class="icon-i2">7</span>
+                            <span class="icon-i2-text">Certificate Course in C++ (CCC++)</span>
+                        </span>
+                    </a>
+                    <a href="certificate-courses.html">
+                        <span class="course-box">
+                            <span class="icon-i2">8</span>
+                            <span class="icon-i2-text">Certificate Course in Python </span>
+                        </span>
+                    </a>
+                    <a href="certificate-courses.html">
+                        <span class="course-box">
+                            <span class="icon-i2">9</span>
+                            <span class="icon-i2-text">Certificate Course in Digital Marketing</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <h3>Career / Placement Opportunity</h3>
+                    <img src="images/spplacement.png" class="img-responsive">
+                    <br>
+                    <p>Smartpacey has a dedicated placement department to help students to get job placements in various
+                        IT job roles with major companies. With immense pleasure to inform you that Smartpacey has
+                        introduced placement department. This department will provide assistance to our students in
+                        their job search. . Smratpacey provides 100% Placement Assistance but No job guarantee, neither
+                        with any Private, nor with any government organization.</p>
+                    <a href="placement.html" class="more-btn">READ MORE</a><br>
+                    <button style="width: 100%;background-color: #063457;color: white;border: none;margin-bottom: 5px;" data-toggle="modal" data-target="#exampleModal">Sample Certificate</button><br>
+                    <button style="width: 100%;background-color: #063457;color: white;border: none;margin-bottom: 5px;">Sample Marksheet</button>
+                    <button style="width: 100%;background-color: #063457;color: white;border: none;">Sample Indutrial Training Certificate</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+        <img src="images\certificate/ce2.png">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    <div id="chairman" style="background-size: cover;"><!-- misstion & strength -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-3 col-xs-12"><!-- our misstion --></div>
+                <div class="col-lg-7 col-md-7 col-sm-9 col-xs-12">
+                    <h2>Smartpacey Management Desk</h2>
+                    <p>Information Technology has become a fastest growing industry in today’s scenario which is
+                        providing thousands of job to well trained professionals. Information technology is proving the
+                        upcoming future that will change every face of human existence. In order to produce IT
+                        professionals, IT education requires a good infrastructure and high quality competence.<br>
+                        Smartpacey Institute & Technology Solution Pvt. Ltd is an Autonomous Institution. The main
+                        objective behind the establishment of this institution is to spread the computer literacy
+                        program, we ensure that student may learn more and more become self-motivated.<br>
+                        Our beefy infrastructure and dedicated officer’s courage students to move forward to get greater
+                        professional competence. They have also been exposed to the student can get enough knowledge to
+                        face any demand and challenges that an employer may have on them. I wish for their great success
+                        and bright future and hope for their better tomorrow.<br>
+                    <p class="text-right"> Chairman & Managing Director- <b>Mr. Shivaji Shinde</b></p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="our_clients">
+        <div class="container">
+            <div class="heading">
+                <h2>Smartpacey Training Programs</h2>
+                <div class="section_title_line1"></div>
+            </div>
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- <div class="swiper-slide"><img src="images\P1.png" width="300px"></div> -->
+                    <div class="swiper-slide"><img src="images\P2.png" width="300px"></div>
+                    <div class="swiper-slide"><img src="images\P3.png" width="300px"></div>
+                    <div class="swiper-slide"><img src="images\P4.png" width="300px"></div>
+                    <div class="swiper-slide"><img src="images\P5.png" width="300px"></div>
+                    <div class="swiper-slide"><img src="images\P6.png" width="300px"></div>
+                    <div class="swiper-slide"><img src="images\P2.png" width="300px"></div>
+                    <div class="swiper-slide"><img src="images\P4.png" width="300px"></div>
+                    <div class="swiper-slide"><img src="images\P7.png" width="300px"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+  
+
+
+    <div class="our_clients" style="background-color: rgb(244, 244, 244);">
+        <div class="heading">
+            <h2>Student Success Stories</h2>
+            <div class="section_title_line1"></div>
+        </div>
+        <div class="success_stories row" style="justify-content: center;display: flex;padding-bottom: 20px;">
+            <div class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide"
+                        style="background-color: transparent;padding-top:60px;display: flex;justify-content: center;">
+                        <div class="card thanks-card" style="border-radius: 20px;border-color: aqua;">
+                            <img src="https://www.smartpacey.com/images/gallery/thumb/vs.jpg"
+                                style="width: 100px !important;height: 100px !important;margin-top: -80px;" alt="">
+                            <h4 style="margin-top: 0;margin-bottom: 0;font-family: 'Bebas Neue', cursive !important;">
+                                Vishnu Shinde</h4>
+                            <h5
+                                style="text-align: center;margin-top: 10px;font-weight: bold;line-height: 12px;color:rgb(76, 76, 76);">
+                                Training Head</h5>
+                            <p style="font-size: 10px;line-height: 15px;">He completed his education as Diploma
+                                Mechanical. In India and abroad lot of investments are being made by several companies
+                                in the field of software, hardware, networking and web technology. </p>
+                            <button style="font-size: 12px;padding:  3px 10px;">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide"
+                        style="background-color: transparent;padding-top:60px;display: flex;justify-content: center;">
+                        <div class="card thanks-card" style="border-radius: 20px;border-color: aqua;">
+                            <img src="https://www.smartpacey.com/images/gallery/thumb/vs.jpg"
+                                style="width: 100px !important;height: 100px !important;margin-top: -80px;" alt="">
+                            <h4 style="margin-top: 0;margin-bottom: 0;font-family: 'Bebas Neue', cursive !important;">
+                                Vishnu Shinde</h4>
+                            <h5
+                                style="text-align: center;margin-top: 10px;font-weight: bold;line-height: 12px;color:rgb(76, 76, 76);">
+                                Training Head</h5>
+                            <p style="font-size: 10px;line-height: 15px;">He completed his education as Diploma
+                                Mechanical. In India and abroad lot of investments are being made by several companies
+                                in the field of software, hardware, networking and web technology. </p>
+                            <button style="font-size: 12px;padding:  3px 10px;">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide"
+                        style="background-color: transparent;padding-top:60px;display: flex;justify-content: center;">
+                        <div class="card thanks-card" style="border-radius: 20px;border-color: aqua;">
+                            <img src="https://www.smartpacey.com/images/gallery/thumb/vs.jpg"
+                                style="width: 100px !important;height: 100px !important;margin-top: -80px;" alt="">
+                            <h4 style="margin-top: 0;margin-bottom: 0;font-family: 'Bebas Neue', cursive !important;">
+                                Vishnu Shinde</h4>
+                            <h5
+                                style="text-align: center;margin-top: 10px;font-weight: bold;line-height: 12px;color:rgb(76, 76, 76);">
+                                Training Head</h5>
+                            <p style="font-size: 10px;line-height: 15px;">He completed his education as Diploma
+                                Mechanical. In India and abroad lot of investments are being made by several companies
+                                in the field of software, hardware, networking and web technology. </p>
+                            <button style="font-size: 12px;padding:  3px 10px;">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide"
+                        style="background-color: transparent;padding-top:60px;display: flex;justify-content: center;">
+                        <div class="card thanks-card" style="border-radius: 20px;border-color: aqua;">
+                            <img src="https://www.smartpacey.com/images/gallery/thumb/vs.jpg"
+                                style="width: 100px !important;height: 100px !important;margin-top: -80px;" alt="">
+                            <h4 style="margin-top: 0;margin-bottom: 0;font-family: 'Bebas Neue', cursive !important;">
+                                Vishnu Shinde</h4>
+                            <h5
+                                style="text-align: center;margin-top: 10px;font-weight: bold;line-height: 12px;color:rgb(76, 76, 76);">
+                                Training Head</h5>
+                            <p style="font-size: 10px;line-height: 15px;">He completed his education as Diploma
+                                Mechanical. In India and abroad lot of investments are being made by several companies
+                                in the field of software, hardware, networking and web technology. </p>
+                            <button style="font-size: 12px;padding:  3px 10px;">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide"
+                        style="background-color: transparent;padding-top:60px;display: flex;justify-content: center;">
+                        <div class="card thanks-card" style="border-radius: 20px;border-color: aqua;">
+                            <img src="https://www.smartpacey.com/images/gallery/thumb/vs.jpg"
+                                style="width: 100px !important;height: 100px !important;margin-top: -80px;" alt="">
+                            <h4 style="margin-top: 0;margin-bottom: 0;font-family: 'Bebas Neue', cursive !important;">
+                                Vishnu Shinde</h4>
+                            <h5
+                                style="text-align: center;margin-top: 10px;font-weight: bold;line-height: 12px;color:rgb(76, 76, 76);">
+                                Training Head</h5>
+                            <p style="font-size: 10px;line-height: 15px;">He completed his education as Diploma
+                                Mechanical. In India and abroad lot of investments are being made by several companies
+                                in the field of software, hardware, networking and web technology. </p>
+                            <button style="font-size: 12px;padding:  3px 10px;">Learn More</button>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="contact-info">
+        <div class="container">
+            <div class="row">
+                <div class="heading">
+                    <h2>Contact Us</h2>
+                    <div class="section_title_line2"></div>
+                </div>
+                <div class="con1_detail">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <address>
+                            <div class="icon-i4">
+                                <i class="glyphicon glyphicon-envelope"></i>
+                            </div>
+                            <div class="icon-i4-text">
+                                <p>smartpacey@gmail.com ( Education )<br>
+                                    smartpaceyjobs@gmail.com (Placement Services)<br>
+                                    smartpaceytech@gmail.com (IT Services)
+                                </p>
+                            </div>
+                        </address>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <address>
+                            <div class="icon-i4">
+                                <i class="glyphicon glyphicon-earphone"></i>
+                            </div>
+                            <div class="icon-i4-text">
+                                <p>Education : +91 9922 336 096<br>Placement Services : +91 9922 336 078 <br> Leadership
+                                    Camp : +91 9604 641 873
+                            </div>
+                        </address>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <address>
+                            <div class="icon-i4">
+                                <i class="glyphicon glyphicon-map-marker"></i>
+                            </div>
+                            <div class="icon-i4-text">
+                                <p>Head Office Address<br>Plot No. 6,
+                                    Kokanwadi Area, Opp. Jay Tower, Chh. Sambhajinagar (MH) - 431001 (India)</p>
+                            </div>
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <iframe src="footer.html" width="100%" frameborder="0" height="290px" marginheight="0" marginwidth="0"
+            scrolling="no"></iframe>
+    </footer>
+
+
+
+    <!-- Js Files -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper2", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            centeredSlides: true,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination2",
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 50,
+                },
+            },
+            navigation: {
+                nextEl: ".swiper-button-next2",
+                prevEl: ".swiper-button-prev2",
+            },
+        });
+
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            centeredSlides: true,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 50,
+                },
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <script src="js\jquery.min.js" type="text/javascript"></script>
+
+    <script>
+        $(document).ready(() => {
+            setInterval(() => {
+                $(".swiper-button-prev").click();
+            }, 2000);
+        })
+    </script>
+
+    <script src="js\bootstrap.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $('ul.nav li.dropdown').hover(function () { $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500); },
+            function () { $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500); });
+
+        var specialKeys = new Array();
+        specialKeys.push(8); //Backspace
+
+        $(".numericwithdecimal").on("keypress keyup blur", function (event) {
+            $(this).val($(this).val().replace(/[^0-9\.]/g, ''));
+            if ((event.which != 46 || $(this).val().indexOf('.') != -1) && (event.which < 48 || event.which > 57)) {
+                event.preventDefault();
+            }
+        });
+
+        $(".numeric").on("keypress keyup blur", function (event) {
+            $(this).val($(this).val().replace(/[^\d].+/, ""));
+            if ((event.which < 48 || event.which > 57)) {
+                event.preventDefault();
+            }
+        });
+        function IsNumeric(evt) {
+            var charCode = (evt.which) ? evt.which : evt.keyCode
+            if (charCode != 8 && charCode != 0 && (charCode < 48 || charCode > 57)) {
+                //if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+                return false;
+            }
+            return true;
+        }
+
+        //$(document).ready(function () {
+        //  $('#onload').modal('show');
+        //});
+
+        function GetOTP() {
+            if (Validation1()) {
+                $.ajax({
+                    type: "POST",
+                    datatype: "Json",
+                    contentType: "application/json;charset=utf-8",
+                    url: "thank-you-partner.aspx/SendOTP",
+                    data: "{'Phone':'" + $('#txtPhone').val() + "'}",
+                    success: function (data) {
+                        if (data.d == 1) {
+                            // $('#').html('OTP Resent Successfully. Max 3 Attempts Allowed.');
+                            OpenOTPpopUp();
+                        }
+                        else if (data.d == 99) {
+                            //$('#').html('Maximum Allowed Attempts exceeded');
+
+                        }
+                    }
+                });
+            }
+            return false;
+        }
+        function OpenOTPpopUp() {
+            $('#myModal').modal('show');
+            //return false;
+        }
+
+        function Validation1() {
+            debugger;
+            var vtxtName = document.getElementById('txtName');
+            var vtxtEmail = document.getElementById('txtEmail');
+            var vtxtPhone = document.getElementById('txtPhone');
+            var vtxtState = document.getElementById('txtstate');
+            //var vtxtCity = document.getElementById('txtCity');
+            //var vtxtState = document.getElementById('ddlState');
+            //var vtxtCity = document.getElementById('ddlCity');
+            var vtxtMsg = document.getElementById('txtMsg');
+
+            var vReturnValue = true;
+            if (vtxtName.value == "") {
+                vtxtName.style.borderColor = "#FF0000"
+                vReturnValue = false;
+            }
+            else {
+                vtxtName.style.borderColor = "#d3d3d3"
+            }
+            if (vtxtEmail.value == "") {
+                vtxtEmail.style.borderColor = "#FF0000"
+                vReturnValue = false;
+            }
+            else {
+                if (/^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/.test(vtxtEmail.value)) {
+                    //if (/^[A-Za-z]+[A-Za-z0-9_\-\.]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,100}$/.test(vtxtEmail.value)) {
+                    vtxtEmail.style.borderColor = "#d3d3d3"
+                }
+                else {
+                    vtxtEmail.style.borderColor = "#FF0000"
+                    vReturnValue = false;
+                }
+            }
+            if (vtxtPhone.value == "") {
+                vtxtPhone.style.borderColor = "#FF0000"
+                vReturnValue = false;
+            }
+            else {
+                vtxtPhone.style.borderColor = "#d3d3d3"
+            }
+            if (vtxtState.value == "") {
+                vtxtState.style.borderColor = "#FF0000"
+                vReturnValue = false;
+            }
+            else {
+                vtxtState.style.borderColor = "#d3d3d3"
+            }
+            /*if (vtxtCity.value == "0") {
+                vtxtCity.style.borderColor = "#FF0000"
+                vReturnValue = false;
+            }
+            else {
+                vtxtCity.style.borderColor = "#d3d3d3"
+            }
+            if (vCourse == "0") {
+                vddlCourse.style.borderColor = "#FF0000"
+                vReturnValue = false;
+            }
+            else {
+                vddlCourse.style.borderColor = "#d3d3d3"
+            }*/
+            if (vtxtMsg.value == "") {
+                vtxtMsg.style.borderColor = "#FF0000"
+                vReturnValue = false;
+            }
+            else {
+                vtxtMsg.style.borderColor = "#d3d3d3"
+            }
+            return vReturnValue;
+        }
+
+        function CheckOTP() {
+            var vFlag = true;
+            $.ajax({
+                type: "POST",
+                datatype: "Json",
+                contentType: "application/json;charset=utf-8",
+                url: "thank-you-partner.aspx/VerifyOTP",
+                data: "{'OTP':'" + $('#txtOTP').val() + "'}",
+                success: function (data) {
+
+                    if (data.d == 1) {
+
+                        // $('#').html('OTP Resent Successfully. Max 3 Attempts Allowed.');
+                        $('#formSubmit').submit();
+                    }
+                    else {
+                        alert('Wrong OTP.');
+                        vFlag = false;
+                        //$('#').html('Maximum Allowed Attempts exceeded');
+
+                    }
+                }
+            });
+            return vFlag;
+        }
+    </script>
+    <script type="text/javascript" src="js\sliders.js"></script>
+    <script type="text/javascript">jQuery(document).ready(function ($) { $('#banner').banner({}) })</script>
+    <script type="text/javascript" src="js\marquee.js"></script>
+</body>
+
+</html>
