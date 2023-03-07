@@ -1,0 +1,510 @@
+﻿<!doctype html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Smartpacey</title>
+   <meta name="description"
+      content="Smartpacey follows a vision of empowering people through IT education, professionals with required competencies, skills and make them employable and winner.">
+   <meta name="keywords" content="tally, web designing, computer classes, it web">
+   <link href="new-css\bootstrap.css" rel="stylesheet" type="text/css">
+   <link href="new-css\custom.css" rel="stylesheet" type="text/css">
+   <link href="new-css\responsive.css" rel="stylesheet" type="text/css">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+   <style>
+      h1 {
+         margin: 0;
+         line-height: 2;
+         text-align: center;
+      }
+
+      h2 {
+         margin: 0 0 0.5em;
+         font-weight: normal;
+      }
+
+      input {
+         position: absolute;
+         opacity: 0;
+         z-index: -1;
+      }
+
+     
+      .row .col {
+         flex: 1;
+      }
+
+      .row .col:last-child {
+         margin-left: 1em;
+      }
+
+      /* Accordion styles */
+      .tabs {
+         border-radius: 3px;
+         overflow: hidden;
+      }
+
+      .tab {
+         width: 100%;
+         color: white;
+         overflow: hidden;
+         border: 1px solid black;
+         margin-bottom: 5px;
+      }
+
+      .tab-label {
+         display: flex;
+         justify-content: space-between;
+         padding: 5px;
+         background: #f5f5f5;
+         color: #000000;
+         font-weight: normal;
+         cursor: pointer;
+         /* Icon */
+      }
+
+      /* .tab-label:hover {
+         background: #0d2c48;
+         color: white;
+      } */
+
+      .tab-label::after {
+         content: "\276F";
+         width: 1em;
+         height: 1em;
+         text-align: center;
+         transition: all 0.35s;
+      }
+
+      .tab-content {
+         max-height: 0;
+         padding: 0 1em;
+         color: #2c3e50;
+         background: white;
+         transition: all 0.35s;
+      }
+
+      .tab-close {
+         display: flex;
+         justify-content: flex-end;
+         padding: 1em;
+         font-size: 0.75em;
+         background: #2c3e50;
+         cursor: pointer;
+      }
+
+
+      input:checked+.tab-label::after {
+         transform: rotate(90deg);
+      }
+
+      input:checked~.tab-content {
+         max-height: 100vh;
+         padding: 1em;
+      }
+
+      .get-social ul li i {
+         height: 20px;
+         line-height: 22px;
+         width: 20px;
+         text-align: center;
+         border-radius: 100%;
+         color: #fcfcfc;
+         font-size: 15px;
+      }
+
+
+      .get-social ul li a.fbook-icon i {
+         background: #128C7E ;
+         color: #fcfcfc;
+      }
+   </style>
+   <!-- <link href="css\main.css" rel="stylesheet"> -->
+</head>
+
+<body>
+   <header>
+      <div class="top-bar">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                      <ul>
+
+                          <li> <a href="register-as-student.html">Enquiry</a></li>
+                          <li><a href="login.html">Student Login</a></li>
+                          <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Franchise<b
+                                      class="caret"></b></a>
+                              <ul class="dropdown-menu">
+                                  <li><a class="mylinks" href="partner.html">Apply for Franchise</a></li>
+                                  <li><a class="mylinks" href="franchise_login.html">Franchise Login</a></li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="clearfix"></div>
+      <div class="container">
+          <div class="row">
+              <nav class="navbar navbar-default" role="navigation">
+                  <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse"
+                          data-target="#bs-example-navbar-collapse-1">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand education-logo" href="index.html"><img src="images\logo.png" a></a>
+                  </div>
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav navbar-right">
+                          <li><a href="index.html"><img class="icon-home" src="images\icon\home.png"></a></li>
+                          <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us <b
+                                      class="caret"></b></a>
+                              <ul class="dropdown-menu">
+                                  <li><a href="about_us.html">About Smartpacey</a></li>
+                                  <li><a href="board-of-directors.html">Board of Directors</a></li>
+                                  <li><a href="management-team.html">Management Team</a></li>
+                              </ul>
+                          </li>
+                          <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses <b
+                                      class="caret"></b></a>
+                              <ul class="dropdown-menu">
+                                  <li><a href="advance-diploma.html">Advance Computer Courses</a></li>
+                                  <li><a href="certificate-courses.html">Certificate Computer Courses</a></li>
+                                  <li><a href="spoken.html">Spoken English</a></li>
+                              </ul>
+                          </li>
+                          <li><a href="leadership.html">Leadership Camp</a></li>
+                          <li><a href="placement.html">Placement</a></li>
+                          <li><a href="verification.html">Validate Certificate</a></li>
+                          <li><a href="download.html">Download</a></li>
+                          <!-- <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Franchise <b
+                                      class="caret"></b></a>
+                              <ul class="dropdown-menu">
+                                  <li><a href="partner.html">Franchise Opportunity</a></li>
+                                  <li><a href="franchise_login.html">Franchise Login</a></li>
+                              </ul>
+                          </li> -->
+                          <li><a href="grievance.php">Grievance Cell</a> </li>
+                          <li><a href="branch.html">Our Branches</a></li>
+                      </ul>
+                  </div><!-- /.navbar-collapse -->
+              </nav>
+          </div>
+      </div>
+  </header>
+  <!-- /header end -->
+
+   <!--# Header #-->
+   <div class="page-banner inner">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+               <h1 style="text-align: left;">Contact Us</h1>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="news-update breadSec">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+               <div class="pageview">
+                  <ul>
+                     <li><a href="index.html"><i>
+                              <img src="images\pageview_img1.png" alt="Index"></i></a>
+                     </li>
+                     <li><i class="fa flaticon-angle2"></i></li>
+                     <li><strong>Locate Our Branches</strong></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+               <!-- <a class="btn-link" href="register-as-student.html">Register as a student</a> -->
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="Updnl" style="margin-bottom: 50px;">
+      <div class="background-gradient">
+         <section class="container">
+            <div class="row">
+               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                  <h1 style="text-align: left;">Head Office</h1>
+                  <div class="titleline1"></div>
+                  <div class="col">
+                      <p><b><span style="color:#025391;font-size: 20px;"> Smartpacey Institute and Technology Solution Pvt. Ltd. </span></b> <br>
+                        <b>Address</b> : Plot No. 6,
+                        Kokanwadi Area, Opp. Jay Tower, Chh. Sambhajinagar (MH) - 431001 (India)</p>
+                      <p><b>Contact No.:</b> 9922336096</p>
+                      <p><b>Email ID.:</b> smartpacey@gmail.com</p>
+                      <div class="get-social" style="float: left;">
+                        <ul>
+                            <li><a href="https://www.facebook.com/smartpaceyinfotech" target="_blank" class="fbook-icon"><i class="fa flaticon-facebook25"></i></a></li>
+                            <li><a href="https://twitter.com/SmartPacey" target="_blank" class="twt-icon"><i class="fa flaticon-twitter16"></i></a></li>
+                            <li><a href="#" class="gplus-icon"><i class="fa flaticon-google26"></i></a></li>
+                            <li><a href="#" class="gplus-icon"><i class='bx bxl-youtube' ></i></a></li>
+                            <li><a href="#" class="gplus-icon"><i class='bx bxl-instagram' ></i></a></li>
+                        </ul>
+                    </div>
+                  </div>
+               </div>
+               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                  <h1 style="text-align: left;">Our Branches</h1>
+                  <div class="titleline1"></div>
+                  <div style="margin: 18px;">
+                     <select id="ddlCountry" class="styled-select">
+                        <option value="0">--Select Distict--</option>
+                        <option value="1">Sambhajinagar</option>
+                        <option value="1">Nashik</option>
+                        <option value="1">Ahmednagar</option>
+                     </select>
+                  </div>
+                  <div class="col">
+                     <div class="tabs">
+                        <div class="tab">
+                           <input type="checkbox" id="chck1">
+                           <label class="tab-label" for="chck1"> <span style="display: flex;align-items: center;"><i class='bx bx-map' style="font-size: 20px;margin-right: 5px;"></i> Smartpacey Institute, Chh. Sambhajinagar </span></label>
+                           <div class="tab-content">
+                              <table class="myTable">
+                                 <tbody>
+                                    <tr>
+                                       <td style="width: 40%;">Branch Head</td>
+                                       <td style="width: 8%;">:</td>
+                                       <td>Shivaji Shinde</td>
+                                    </tr>
+                                    <tr>
+                                       <td style="width: 30%;">Contact No.</td>
+                                       <td style="width: 8%;">:</td>
+                                       <td>9922336096</td>
+                                    </tr>
+                                    <tr>
+                                       <td valign="top" style="width: 30%;">Address</td>
+                                       <td valign="top" style="width: 8%;">:</td>
+                                       <td>Plot No. 6, Kokanwadi Area, Opp. Jay Tower, Chh. Sambhajinagar (MH)</td>
+                                    </tr>
+                                    <tr>
+                                       <td style="width: 30%;">Get In Touch</td>
+                                       <td style="width: 8%;">:</td>
+                                       <td>
+                                          <div class="get-social" style="float: left;margin-top: 10px;">
+                                             <ul>
+                                                <li><a href="https://www.facebook.com/smartpaceyinfotech"
+                                                      target="_blank" class="fbook-icon"><i
+                                                         class='bx bxl-whatsapp'></i></a></li>
+                                                <li><a href="https://twitter.com/SmartPacey" target="_blank"
+                                                      class="twt-icon"><i class='bx bx-phone'></i></a></li>
+                                                <li><a href="#" class="gplus-icon"><i class='bx bx-envelope'></i></a>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+                        </div>
+                        <div class="tab">
+                           <input type="checkbox" id="chck2">
+                           <label class="tab-label" for="chck2"> <span style="display: flex;align-items: center;"><i class='bx bx-map' style="font-size: 20px;margin-right: 5px;"></i> Smartpacey Institute, Chh. Sambhajinagar </span></label>
+                           <div class="tab-content">
+                              <table class="myTable">
+                                 <tbody>
+                                    <tr>
+                                       <td style="width: 40%;">Branch Head</td>
+                                       <td style="width: 8%;">:</td>
+                                       <td>Shivaji Shinde</td>
+                                    </tr>
+                                    <tr>
+                                       <td style="width: 30%;">Contact No.</td>
+                                       <td style="width: 8%;">:</td>
+                                       <td>9922336096</td>
+                                    </tr>
+                                    <tr>
+                                       <td valign="top" style="width: 30%;">Address</td>
+                                       <td valign="top" style="width: 8%;">:</td>
+                                       <td>Plot No. 6, Kokanwadi Area, Opp. Jay Tower, Chh. Sambhajinagar (MH)</td>
+                                    </tr>
+                                    <tr>
+                                       <td style="width: 30%;">Get In Touch</td>
+                                       <td style="width: 8%;">:</td>
+                                       <td>
+                                          <div class="get-social" style="float: left;margin-top: 10px;">
+                                             <ul>
+                                                <li><a href="https://www.facebook.com/smartpaceyinfotech"
+                                                      target="_blank" class="fbook-icon"><i
+                                                         class='bx bxl-whatsapp'></i></a></li>
+                                                <li><a href="https://twitter.com/SmartPacey" target="_blank"
+                                                      class="twt-icon"><i class='bx bx-phone'></i></a></li>
+                                                <li><a href="#" class="gplus-icon"><i class='bx bx-envelope'></i></a>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+                        </div>
+                        <div class="tab">
+                           <input type="checkbox" id="chck3">
+                           <label class="tab-label" for="chck3"> <span style="display: flex;align-items: center;"><i class='bx bx-map' style="font-size: 20px;margin-right: 5px;"></i> Smartpacey Institute, Chh. Sambhajinagar </span></label>
+                           <div class="tab-content">
+                              <table class="myTable">
+                                 <tbody>
+                                    <tr>
+                                       <td style="width: 40%;">Branch Head</td>
+                                       <td style="width: 8%;">:</td>
+                                       <td>Shivaji Shinde</td>
+                                    </tr>
+                                    <tr>
+                                       <td style="width: 30%;">Contact No.</td>
+                                       <td style="width: 8%;">:</td>
+                                       <td>9922336096</td>
+                                    </tr>
+                                    <tr>
+                                       <td valign="top" style="width: 30%;">Address</td>
+                                       <td valign="top" style="width: 8%;">:</td>
+                                       <td>Plot No. 6, Kokanwadi Area, Opp. Jay Tower, Chh. Sambhajinagar (MH)</td>
+                                    </tr>
+                                    <tr>
+                                       <td style="width: 30%;">Get In Touch</td>
+                                       <td style="width: 8%;">:</td>
+                                       <td>
+                                          <div class="get-social" style="float: left;margin-top: 10px;">
+                                             <ul>
+                                                <li><a href="https://www.facebook.com/smartpaceyinfotech"
+                                                      target="_blank" class="fbook-icon"><i
+                                                         class='bx bxl-whatsapp'></i></a></li>
+                                                <li><a href="https://twitter.com/SmartPacey" target="_blank"
+                                                      class="twt-icon"><i class='bx bx-phone'></i></a></li>
+                                                <li><a href="#" class="gplus-icon"><i class='bx bx-envelope'></i></a>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+                        </div>
+                       
+                     </div>
+                  </div>
+                 
+               </div>
+              
+            </div>
+         </section>
+      </div>
+   </div>
+   <footer>
+      <iframe src="footer.html" width="100%" frameborder="0" marginheight="0" marginwidth="0" scrolling="no"></iframe>
+   </footer>
+   </form>
+   <script src="js\jquery.min.js"></script>
+   <!-- Header -->
+   <script>
+      $(window).scroll(function () {
+         if ($(window).scrollTop() >= 30) {
+            $('menu').addClass('fixed-header');
+         }
+         else {
+            $('menu').removeClass('fixed-header');
+         }
+      });
+   </script>
+   <!--# Header #-->
+   <script><!-- Navigation -->
+      $(function () {
+         $('ul.nav li.dropdown').hover(function () {
+            $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+         },
+            function () {
+               $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+            });
+         var html = $('html, body'),
+            navContainer = $('.nav-container'),
+            navToggle = $('.nav-toggle'),
+            navDropdownToggle = $('.has-dropdown');
+
+         // Nav toggle
+         navToggle.on('click', function (e) {
+            var $this = $(this);
+            e.preventDefault();
+            $this.toggleClass('is-active');
+            navContainer.toggleClass('is-visible');
+            html.toggleClass('nav-open');
+         });
+
+         // Nav dropdown toggle
+         navDropdownToggle.on('click', function () {
+            var $this = $(this);
+            $this.toggleClass('is-active').children('ul').toggleClass('is-visible');
+         });
+
+         // Prevent click events from firing on children of navDropdownToggle
+         navDropdownToggle.on('click', '*', function (e) {
+            e.stopPropagation();
+         });
+      });
+   </script>
+   <!-- Navigation -->
+   <script type="text/javascript"><!-- Parallax -->
+      $(document).ready(function () {
+         $window = $(window);
+
+         $('section[data-type="background"]').each(function () {
+            var $bgobj = $(this);
+
+            $(window).scroll(function () {
+               var yPos = -($window.scrollTop() / $bgobj.data('speed'));
+               var coords = '50% ' + yPos + 'px';
+               $bgobj.css({ backgroundPosition: coords });
+            });
+         });
+      });
+      document.createElement("article");
+      document.createElement("section");
+   </script>
+   <!--# Parallax #-->
+   <script type="text/javascript" src="js\smk-accordion.js"></script>
+   <!-- Accordion -->
+   <script type="text/javascript">
+      jQuery(document).ready(function ($) {
+
+
+         $(".accordion_example4").smk_Accordion({
+            closeAble: true, //boolean
+            closeOther: false, //boolean
+         });
+
+      });
+   </script>
+   <script type="text/javascript">
+      function city(x) {
+         dist = x;
+         $.ajax({
+            method: 'post',
+            data: { dist: dist },
+            url: 'show_branch.php',
+            success: function (data) {
+               $("#branch").html(data);
+
+            }
+         });
+      }
+   </script>
+   <!--# Accordion #-->
+</body>
+
+</html>

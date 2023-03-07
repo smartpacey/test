@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html>
 
 <head>
@@ -24,6 +24,8 @@
             $("#simpleModal").modal('show');
         }
     </script>
+
+
     <style>
         .card {
             margin: 0 10px;
@@ -62,6 +64,18 @@
 
             .card {
                 margin-bottom: 20px;
+            }
+            .prtnr-logo{
+                flex-direction: column;
+            }
+            .prtnr-logo .prtnrlogo-text{
+                width: 100%;
+                padding: 20px 0 20px 0px;
+                text-align: center;
+            }
+
+            .myMarquee{
+                padding: 20px 0;
             }
         }
 
@@ -104,7 +118,7 @@
             width: 50px;
             height: 50px;
             position: fixed;
-            bottom: 200px;
+            bottom: 150px;
             right: 20px;
             color: white;
             background: #25d366;
@@ -281,6 +295,15 @@
         .mylinks:hover{
             color: white !important;
         }
+
+        .myMarquee img{
+            background-color: white;
+            margin-right: 5px;
+            padding: 5px;
+            border: 1px solid gray;
+        }
+
+      
        
     </style>
 
@@ -290,9 +313,7 @@
 <body>
 
     <a href="#" class="whatsapp-btn"><span id="pulse"></span> <i class='bx bxl-whatsapp'></i></a>
-    <a href="#" class="insta-btn"><span id="pulse2"></span> <i class='bx bxl-instagram'></i></a>
     <a href="#" class="phone-btn"><span id="pulse3"></span> <i class='bx bx-phone'></i></a>
-    <a href="#" class="yt-btn"><span id="pulse4"></span> <i class='bx bxl-youtube'></i></a>
     <!-- <a class="btn-link entry-btn" href="register-as-student.html">Entrance</a> -->
 
     <!-- <div id="simpleModal" class="modal" tabindex="-1" role="dialog">
@@ -322,14 +343,9 @@
 
                             <li> <a href="register-as-student.html">Enquiry</a></li>
                             <li><a href="login.html">Student Login</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Franchise<b
-                                        class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="mylinks" href="partner.html">Apply for Franchise</a></li>
-                                    <li><a class="mylinks" href="franchise_login.html">Franchise Login</a></li>
-                                </ul>
-                            </li>
+                            <li><a href="franchise_login.html">Franchise Login</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                          
                         </ul>
                     </div>
                 </div>
@@ -367,7 +383,9 @@
                                 <ul class="dropdown-menu">
                                     <li><a href="advance-diploma.html">Advance Computer Courses</a></li>
                                     <li><a href="certificate-courses.html">Certificate Computer Courses</a></li>
-                                    <li><a href="spokenInfo.html">Spoken English</a></li>
+                                    <li><a href="aptitute.html">Aptitute Development Program</a></li>
+                                    <li><a href="spokenInfo.html">Spoken English Course</a></li>
+                                    <li><a href="smartabucus.html">Smart Abucus</a></li>
                                 </ul>
                             </li>
                             <li><a href="leadership.html">Leadership Camp</a></li>
@@ -383,7 +401,7 @@
                                 </ul>
                             </li> -->
                             <li><a href="grievance.php">Grievance Cell</a> </li>
-                            <li><a href="branch.php">Our Branches</a></li>
+                            <li><a href="partner.html">Apply for Franchise</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
                 </nav>
@@ -422,7 +440,8 @@
             </div>
         </div>
     </div>
-    <div class="traning-partners">
+    
+    <!-- <div class="traning-partners">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align: center;">
@@ -437,17 +456,32 @@
                         <li><a href="#"><img src="images\partner4.png"></a></li>
                         <li><a href="#"><img src="images\partner5.png"></a></li>
                     </ul>
-                    <!-- <div class="partners" style="display: flex;justify-content: center;flex-wrap: wrap;">
+                 <div class="partners" style="display: flex;justify-content: center;flex-wrap: wrap;">
                         <a href="#"><img width="200px" height="70px" style="border: 5px solid #e4e4e4;" src="images\partner1.png"></a>
                         <a href="#"><img width="200px" height="70px" style="border: 5px solid #e4e4e4;" src="images\partner2.png"></a>
                         <a href="#"><img width="200px" height="70px" style="border: 5px solid #e4e4e4;" src="images\spplacement.png"></a>
                         <a href="#"><img width="200px" height="70px" style="border: 5px solid #e4e4e4;" src="images\partner4.png"></a>
                         <a href="#"><img width="200px" height="70px" style="border: 5px solid #e4e4e4;" src="images\partner5.png"></a>
-                    </div> -->
+                    </div> 
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+
+
+
+   <div class="container prtnr-logo brdr-b" style="display: flex;align-items: center;">
+        <div class="prtnrlogo-text" style="z-index: 2;">
+            <h1> Our Partners</h1>
+        </div>
+    <marquee class="myMarquee" behavior="" direction="" >
+    <img src="images/partner1.png"  width="200px"  alt="">
+    <img src="images/partner2.png"  width="200px"  alt="">
+    <img src="images/spplacement.png" width="200px" alt="">
+    <img src="images/partner4.png" width="200px" alt="">
+    <img src="images/partner5.png" width="200px" alt="">
+    </marquee>
+   </div>
     <div class="information">
         <div class="container">
             <div class="row">
@@ -518,7 +552,7 @@
                     <a href="accounting.html">
                         <span class="course-box">
                             <span class="icon-i2">2</span>
-                            <span class="icon-i2-text">Advance Diploma in Financial Accounting</span>
+                            <span class="icon-i2-text">Advance Diploma in Financial Accounting <img src="./images/new.gif" width="50px" alt=""> </span>
                         </span>
                     </a>
                     <a href="software.html">
@@ -536,7 +570,7 @@
                     <a href="advance-diploma.html">
                         <span class="course-box">
                             <span class="icon-i2">5</span>
-                            <span class="icon-i2-text">Full Stack Development Program</span>
+                            <span class="icon-i2-text">Full Stack Development Program <img src="./images/new.gif" width="50px" alt=""></span>
                         </span>
                     </a>
                     <a href="advance-diploma.html">
@@ -560,7 +594,7 @@
                     <a href="advance-diploma.html">
                         <span class="course-box">
                             <span class="icon-i2">9</span>
-                            <span class="icon-i2-text">Diploma in Corporate IT Leady</span>
+                            <span class="icon-i2-text">Diploma in Corporate IT Leady <img src="./images/new.gif" width="50px" alt=""> </span>
                         </span>
                     </a>
                 </div>
@@ -611,7 +645,7 @@
                     <a href="certificate-courses.html">
                         <span class="course-box">
                             <span class="icon-i2">8</span>
-                            <span class="icon-i2-text">Certificate Course in Python </span>
+                            <span class="icon-i2-text">Certificate Course in Python  <img src="./images/new.gif" width="50px" alt=""> </span>
                         </span>
                     </a>
                     <a href="certificate-courses.html">
@@ -623,23 +657,29 @@
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <h3>Career / Placement Opportunity</h3>
-                    <img src="images/spplacement.png" class="img-responsive">
-                    <br>
-                    <p>Smartpacey has a dedicated placement department to help students to get job placements in various
-                        IT job roles with major companies. With immense pleasure to inform you that Smartpacey has
-                        introduced placement department. This department will provide assistance to our students in
-                        their job search. . Smratpacey provides 100% Placement Assistance but No job guarantee, neither
-                        with any Private, nor with any government organization.</p>
+                    <details>
+                        <summary>
+                            <img src="images/spplacement.png" class="img-responsive">
+                            <br>
+                            Smartpacey has a dedicated placement department to help students to get job placements in various
+                            IT job roles with major companies. With immense pleasure to inform you that Smartpacey has
+                            introduced placement department. 
+                        </summary>
+                        This department will provide assistance to our students in
+                            their job search. . Smratpacey provides 100% Placement Assistance but No job guarantee, neither
+                            with any Private, nor with any government organization.</p>
+                      </details>
+                    
                     <a href="placement.html" class="more-btn">READ MORE</a><br>
-                    <button style="width: 100%;background-color: #063457;color: white;border: none;margin-bottom: 5px;" data-toggle="modal" data-target="#exampleModal">Sample Certificate</button><br>
-                    <button style="width: 100%;background-color: #063457;color: white;border: none;margin-bottom: 5px;">Sample Marksheet</button>
-                    <button style="width: 100%;background-color: #063457;color: white;border: none;">Sample Indutrial Training Certificate</button>
+                    <button style="padding:10px 0;width: 100%;background-color: #063457;color: white;border: none;margin-bottom: 5px;" data-toggle="modal" data-target="#exampleModal">Sample Certificate</button><br>
+                    <button style="padding:10px 0;width: 100%;background-color: #063457;color: white;border: none;margin-bottom: 5px;" data-toggle="modal" data-target="#exampleModal2">Sample Marksheet</button>
+                    <button style="padding:10px 0;width: 100%;background-color: #063457;color: white;border: none;">Sample Indutrial Training Certificate</button>
                 </div>
             </div>
         </div>
     </div>
     <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade certificate" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog  modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -648,14 +688,36 @@
           </button>
         </div>
         <div class="modal-body">
-        <img src="images\certificate/ce2.png">
+        <img src="images\certificate/ce2.png" width="100%">
         </div>
-        <div class="modal-footer">
+        <!-- <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
+  
+  <!-- Modal -->
+<div class="modal fade marksheet" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+        <img src="images\certificate/ce2.png" width="100%">
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+
+
     
     <div id="chairman" style="background-size: cover;"><!-- misstion & strength -->
         <div class="container">
@@ -711,9 +773,9 @@
   
 
 
-    <div class="our_clients" style="background-color: rgb(244, 244, 244);">
+    <div class="our_clients" style="background-color: rgb(244, 244, 244);overflow: hidden;">
         <div class="heading">
-            <h2>Student Success Stories</h2>
+            <h2>Meet Our Team</h2>
             <div class="section_title_line1"></div>
         </div>
         <div class="success_stories row" style="justify-content: center;display: flex;padding-bottom: 20px;">
@@ -825,7 +887,7 @@
                                 <i class="glyphicon glyphicon-envelope"></i>
                             </div>
                             <div class="icon-i4-text">
-                                <p>smartpacey@gmail.com ( Education )<br>
+                                 <p>smartpacey@gmail.com (Education)<br>
                                     smartpaceyjobs@gmail.com (Placement Services)<br>
                                     smartpaceytech@gmail.com (IT Services)
                                 </p>
@@ -1110,6 +1172,7 @@
     <script type="text/javascript" src="js\sliders.js"></script>
     <script type="text/javascript">jQuery(document).ready(function ($) { $('#banner').banner({}) })</script>
     <script type="text/javascript" src="js\marquee.js"></script>
+    <script src="/js/custom.js"></script>
 </body>
 
 </html>
