@@ -85,7 +85,7 @@
 </header>
 <!-- /header end --> 
 
-<div class="page-banner placeBg">
+<div class="page-banner" style="background:url(./images/banner/ac-survey.jpg);">
   <div class="container">
       <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">

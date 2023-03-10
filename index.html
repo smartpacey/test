@@ -12,7 +12,7 @@
     <link href="new-css\custom.css" rel="stylesheet" type="text/css">
     <link href="new-css\responsive.css" rel="stylesheet" type="text/css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+   
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <!-- <link href="css\main.css" rel="stylesheet"> -->
@@ -27,6 +27,10 @@
 
 
     <style>
+
+        .education-logo{
+            margin-top: -20px;
+        }
         .card {
             margin: 0 10px;
             width: 300px;
@@ -62,6 +66,14 @@
                 align-items: center;
             }
 
+            .education-logo{
+            margin-top: 20px;
+        }
+
+            .hideContainer{
+                display: none;
+            }
+
             .card {
                 margin-bottom: 20px;
             }
@@ -70,13 +82,18 @@
             }
             .prtnr-logo .prtnrlogo-text{
                 width: 100%;
-                padding: 20px 0 20px 0px;
+                padding: 5px 0 5px 0px;
                 text-align: center;
             }
 
             .myMarquee{
-                padding: 20px 0;
+                padding: 10px 0;
             }
+             
+            .heading{
+            font-size: 20px !important;
+            margin-bottom: 0;
+        }
         }
 
         .swiper {
@@ -118,7 +135,7 @@
             width: 50px;
             height: 50px;
             position: fixed;
-            bottom: 150px;
+            bottom: 100px;
             right: 20px;
             color: white;
             background: #25d366;
@@ -151,10 +168,10 @@
             width: 50px;
             height: 50px;
             position: fixed;
-            bottom: 80px;
+            bottom: 40px;
             right: 20px;
             color: white;
-            background: #2553d3;
+            background: #fefa2c;
             font-size: 25px;
             border-radius: 50%;
             display: flex;
@@ -235,7 +252,7 @@
             width: 50px;
             height: 50px;
             position: absolute;
-            background-color: #2553d3;
+            background-color: #fefa2c;
             border-radius: 50%;
             animation: pulse 0.7s linear infinite;
         }
@@ -303,17 +320,23 @@
             border: 1px solid gray;
         }
 
-      
+       .applyBtn{
+        z-index: 2;
+       }
        
     </style>
+ 
+ <link href="new-css\course.css" rel="stylesheet" type="text/css">
 
 
 </head>
 
 <body>
 
-    <a href="#" class="whatsapp-btn"><span id="pulse"></span> <i class='bx bxl-whatsapp'></i></a>
-    <a href="#" class="phone-btn"><span id="pulse3"></span> <i class='bx bx-phone'></i></a>
+    <a target="_blank" href="https://api.whatsapp.com/send?phone=919922336096&text=I%27m+visit+your+website+for+admission+process" class="whatsapp-btn"><span id="pulse"></span> <i class='bx bxl-whatsapp'></i></a>
+    <a target="_blank" href="register-as-student.html" class="phone-btn"><span id="pulse3"></span> <img class="applyBtn" src="./images/apply2.png" width="50px" alt=""></a>
+
+    <!-- <a href="#" class="phone-btn"><span id="pulse3"></span> <i class='bx bx-phone'></i></a> -->
     <!-- <a class="btn-link entry-btn" href="register-as-student.html">Entrance</a> -->
 
     <!-- <div id="simpleModal" class="modal" tabindex="-1" role="dialog">
@@ -340,8 +363,6 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <ul>
-
-                            <li> <a href="register-as-student.html">Enquiry</a></li>
                             <li><a href="login.html">Student Login</a></li>
                             <li><a href="franchise_login.html">Franchise Login</a></li>
                             <li><a href="contact.html">Contact Us</a></li>
@@ -391,7 +412,6 @@
                             <li><a href="leadership.html">Leadership Camp</a></li>
                             <li><a href="placement.html">Placement</a></li>
                             <li><a href="verification.html">Validate Certificate</a></li>
-                            <li><a href="download.html">Download</a></li>
                             <!-- <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Franchise <b
                                         class="caret"></b></a>
@@ -401,7 +421,7 @@
                                 </ul>
                             </li> -->
                             <li><a href="grievance.php">Grievance Cell</a> </li>
-                            <li><a href="partner.html">Apply for Franchise</a></li>
+                            <li><a href="partner.html">Franchise</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
                 </nav>
@@ -413,11 +433,12 @@
     <!-- Slider section-->
     <div id="banner">
         <ul class="banner">
-            <li><img src="images\banner\b2.png" class="img-responsive"></li>
-            <li><img src="images\banner\b2.png" class="img-responsive"></li>
-            <li><img src="images\banner\b2.png" class="img-responsive"></li>
-            <li><img src="images\banner\b2.png" class="img-responsive"></li>
-            <li><img src="images\banner\b2.png" class="img-responsive"></li>
+            <li><img src="images\banner\04.jpg" class="img-responsive"></li>
+            <li><img src="images\banner\05.jpg" class="img-responsive"></li>
+            <li><img src="images\banner\10.jpg" class="img-responsive"></li>
+            <li><img src="images\banner\06.jpg" class="img-responsive"></li>
+            <li><img src="images\banner\08.jpg" class="img-responsive"></li>
+            <li><img src="images\banner\09.jpg" class="img-responsive"></li>
         </ul>
     </div><!-- End Slider-->
     <div class="news-update">
@@ -427,7 +448,7 @@
                     <h4>"Committed To Excellence In IT Education"</h4>
                     <ul id="marquee" class="marquee">
                         <!--14052018-->
-                        <li><em><strong>Turn Your Ambition With Smartpacey Into Accomplishment.</strong></em></li>
+                        <li><em><strong>Most Trusted IT Education & IT Solution Provider Company in Maharashtra</strong></em></li>
                         <li><em><strong>Career Guidance & Training for IT Student with LETEST TECHNOLOGIES</strong></em>
                         </li>
                         <li><em><strong>Join Leadership Development Camp for Better Future</strong></em></li>
@@ -472,14 +493,14 @@
 
    <div class="container prtnr-logo brdr-b" style="display: flex;align-items: center;">
         <div class="prtnrlogo-text" style="z-index: 2;">
-            <h1> Our Partners</h1>
+            <h1 class="heading">Smartpacey Group</h1>
         </div>
     <marquee class="myMarquee" behavior="" direction="" >
     <img src="images/partner1.png"  width="200px"  alt="">
     <img src="images/partner2.png"  width="200px"  alt="">
     <img src="images/spplacement.png" width="200px" alt="">
-    <img src="images/partner4.png" width="200px" alt="">
-    <img src="images/partner5.png" width="200px" alt="">
+    <img src="images/Speak Smartly.png" width="135px" alt="">
+    <img src="images/Smart ABACUS.png" width="127px" alt="">
     </marquee>
    </div>
     <div class="information">
@@ -511,6 +532,9 @@
             </div>
         </div>
     </div>
+
+
+
     <div class="academy-vission">
         <div class="container">
             <div class="row">
@@ -524,9 +548,7 @@
                         Smartpacey Branch in all India for build a strong community of Young Entrurpreuner across the
                         country by inspired to young for start own business.</p>
                    
-                    <!-- <iframe width="100%" height="315" src="https://www.youtube.com/embed/ogJ-FvSxqWg"
-                        title="YouTube video player" frameborder="0" allow="" allowfullscreen></iframe> -->
-                </div>
+                  </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <h3>Smartpacey Mission</h3>
                     <div class="section_title_line2"></div>
@@ -536,9 +558,68 @@
                 </div>
             </div>
         </div>
+        
     </div>
+    <section class="cta" >
+        <div class="container">
+
+            <div class="row pb">
+                <div class="col-md-6">
+                    <h2 style="font-size: 20px;">How to get certified &amp; job ready</h2>
+                    <div class="media step_card">
+                        <div class="media-left">
+                            <p class="step">Step<br><span>1</span></p>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Register</h4>
+                            <p>Register online by clicking on the <a href="register-as-student.html" target="_blank">Register Now</a> button from below.</p>
+                        </div>
+                    </div>
+                    <div class="media step_card">
+                        <div class="media-left">
+                            <p class="step">Step<br><span>2</span></p>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Training</h4>
+                            <p>Get Professional Training with live Projects from Smartpacey IT Experts.</p>
+                        </div>
+                    </div>
+                    <div class="media step_card">
+                        <div class="media-left">
+                            <p class="step">Step<br><span>3</span></p>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Exam & Get Certified</h4>
+                            <p>Get Certified after passing the exam with a Certificate that can be validated online.</p>
+                        </div>
+                    </div>
+                    <div class="media step_card">
+                        <div class="media-left">
+                            <p class="step">Step<br><span>4</span></p>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Internship</h4>
+                            <p>Get Certified after passing the exam with a Certificate that can be validated online.</p>
+                        </div>
+                    </div> 
+                    <div class="media step_card">
+                        <div class="media-left">
+                            <p class="step">Step<br><span>5</span></p>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Placement</h4>
+                            <p>Smartpacey provide placement assistance to our students in their job search</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center hideContainer" style="padding-top: 100px;">
+                   <img src="./images/process.png" width="400px" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
               
-    <div class="career-prefer">
+    <div class="career-prefer" style="background-color: #efefef;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
