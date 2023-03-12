@@ -12,7 +12,7 @@
     <link href="new-css\custom.css" rel="stylesheet" type="text/css">
     <link href="new-css\responsive.css" rel="stylesheet" type="text/css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-   
+
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <!-- <link href="css\main.css" rel="stylesheet"> -->
@@ -27,13 +27,13 @@
 
 
     <style>
-
-        .education-logo{
+        .education-logo {
             margin-top: -20px;
         }
+
         .card {
             margin: 0 10px;
-            width: 300px;
+            width: 400px;
             align-items: center;
             display: flex;
             flex-direction: column;
@@ -44,7 +44,7 @@
 
         .card>img {
             border-radius: 50%;
-            width: 100px;
+            width: 150px;
         }
 
         .card>button {
@@ -66,35 +66,56 @@
                 align-items: center;
             }
 
-            .education-logo{
-            margin-top: 20px;
-        }
+            .education-logo {
+                margin-top: 20px;
+            }
 
-            .hideContainer{
+            .hideContainer {
                 display: none;
             }
 
             .card {
                 margin-bottom: 20px;
             }
-            .prtnr-logo{
+
+            .prtnr-logo {
                 flex-direction: column;
             }
-            .prtnr-logo .prtnrlogo-text{
+
+            .prtnr-logo .prtnrlogo-text {
                 width: 100%;
                 padding: 5px 0 5px 0px;
                 text-align: center;
             }
 
-            .myMarquee{
+            .myMarquee {
                 padding: 10px 0;
             }
-             
-            .heading{
-            font-size: 20px !important;
-            margin-bottom: 0;
+
+            .heading {
+                font-size: 20px !important;
+                margin-bottom: 0;
+            }
+
+
+
         }
+
+        .mobile-partner {
+            display: none;
         }
+
+        @media screen and (max-width:600px) {
+            .mobile-partner {
+                display: block;
+            }
+
+            .desktop-view {
+                display: none !important;
+            }
+
+        }
+
 
         .swiper {
             width: 100%;
@@ -171,7 +192,7 @@
             bottom: 40px;
             right: 20px;
             color: white;
-            background: #fefa2c;
+            background: #1978d2;
             font-size: 25px;
             border-radius: 50%;
             display: flex;
@@ -252,7 +273,7 @@
             width: 50px;
             height: 50px;
             position: absolute;
-            background-color: #fefa2c;
+            background-color: #1978d2;
             border-radius: 50%;
             animation: pulse 0.7s linear infinite;
         }
@@ -300,41 +321,48 @@
             border: 5px solid transparent;
             position: fixed;
             transform: rotate(90deg);
-            top:70%;
+            top: 70%;
             z-index: 10;
             left: -34px;
         }
 
-        .mylinks{
+        .mylinks {
             color: black !important;
         }
 
-        .mylinks:hover{
+        .mylinks:hover {
             color: white !important;
         }
 
-        .myMarquee img{
+        .myMarquee img {
             background-color: white;
             margin-right: 5px;
             padding: 5px;
             border: 1px solid gray;
         }
 
-       .applyBtn{
-        z-index: 2;
-       }
-       
+        .applyBtn {
+            z-index: 2;
+        }
+
+
+        * {
+            font-family: 'Ubuntu' !important;
+        }
     </style>
- 
- <link href="new-css\course.css" rel="stylesheet" type="text/css">
+
+    <link href="new-css\course.css" rel="stylesheet" type="text/css">
 
 
 </head>
 
 <body>
 
-    <a target="_blank" href="https://api.whatsapp.com/send?phone=919922336096&text=I%27m+visit+your+website+for+admission+process" class="whatsapp-btn"><span id="pulse"></span> <i class='bx bxl-whatsapp'></i></a>
-    <a target="_blank" href="register-as-student.html" class="phone-btn"><span id="pulse3"></span> <img class="applyBtn" src="./images/apply2.png" width="50px" alt=""></a>
+    <a target="_blank"
+        href="https://api.whatsapp.com/send?phone=919922336096&text=I%27m+visit+your+website+for+admission+process"
+        class="whatsapp-btn"><span id="pulse"></span> <i class='bx bxl-whatsapp'></i></a>
+    <a target="_blank" href="register-as-student.html" class="phone-btn"><span id="pulse3"></span> <img class="applyBtn"
+            src="./images/apply2.png" width="50px" alt=""></a>
 
     <!-- <a href="#" class="phone-btn"><span id="pulse3"></span> <i class='bx bx-phone'></i></a> -->
     <!-- <a class="btn-link entry-btn" href="register-as-student.html">Entrance</a> -->
@@ -366,7 +394,7 @@
                             <li><a href="login.html">Student Login</a></li>
                             <li><a href="franchise_login.html">Franchise Login</a></li>
                             <li><a href="contact.html">Contact Us</a></li>
-                          
+
                         </ul>
                     </div>
                 </div>
@@ -448,7 +476,8 @@
                     <h4>"Committed To Excellence In IT Education"</h4>
                     <ul id="marquee" class="marquee">
                         <!--14052018-->
-                        <li><em><strong>Most Trusted IT Education & IT Solution Provider Company in Maharashtra</strong></em></li>
+                        <li><em><strong>Most Trusted IT Education & IT Solution Provider Company in
+                                    Maharashtra</strong></em></li>
                         <li><em><strong>Career Guidance & Training for IT Student with LETEST TECHNOLOGIES</strong></em>
                         </li>
                         <li><em><strong>Join Leadership Development Camp for Better Future</strong></em></li>
@@ -461,8 +490,8 @@
             </div>
         </div>
     </div>
-    
-    <!-- <div class="traning-partners">
+
+    <div class="traning-partners mobile-partner">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align: center;">
@@ -473,41 +502,35 @@
                         <li><a href="placement.html"><img src="images\spplacement.png"></a></li>
                     </ul>
 
-                    <ul class="training-partner-logos">
-                        <li><a href="#"><img src="images\partner4.png"></a></li>
-                        <li><a href="#"><img src="images\partner5.png"></a></li>
-                    </ul>
-                 <div class="partners" style="display: flex;justify-content: center;flex-wrap: wrap;">
-                        <a href="#"><img width="200px" height="70px" style="border: 5px solid #e4e4e4;" src="images\partner1.png"></a>
-                        <a href="#"><img width="200px" height="70px" style="border: 5px solid #e4e4e4;" src="images\partner2.png"></a>
-                        <a href="#"><img width="200px" height="70px" style="border: 5px solid #e4e4e4;" src="images\spplacement.png"></a>
-                        <a href="#"><img width="200px" height="70px" style="border: 5px solid #e4e4e4;" src="images\partner4.png"></a>
-                        <a href="#"><img width="200px" height="70px" style="border: 5px solid #e4e4e4;" src="images\partner5.png"></a>
-                    </div> 
+
+
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
 
 
-   <div class="container prtnr-logo brdr-b" style="display: flex;align-items: center;">
+    <div class="container prtnr-logo brdr-b desktop-view" style="display: flex;align-items: center;">
         <div class="prtnrlogo-text" style="z-index: 2;">
             <h1 class="heading">Smartpacey Group</h1>
         </div>
-    <marquee class="myMarquee" behavior="" direction="" >
-    <img src="images/partner1.png"  width="200px"  alt="">
-    <img src="images/partner2.png"  width="200px"  alt="">
-    <img src="images/spplacement.png" width="200px" alt="">
-    <img src="images/Speak Smartly.png" width="135px" alt="">
-    <img src="images/Smart ABACUS.png" width="127px" alt="">
-    </marquee>
-   </div>
+        <marquee class="myMarquee" behavior="" direction="">
+            <img src="images/partner1.png" width="200px" alt="">
+            <img src="images/partner2.png" width="200px" alt="">
+            <img src="images/spplacement.png" width="200px" alt="">
+            <img src="images/Speak Smartly.png" width="135px" alt="">
+            <img src="images/Smart ABACUS.png" width="127px" alt="">
+        </marquee>
+    </div>
+
+
     <div class="information">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6col-sm-6 col-xs-12">
                     <h1>Welcome To Smartpacey</h1>
+                    <div class="titleline1"></div>
                     <p>In India and abroad lot of investments are being made by several companies in the field of
                         software, hardware, networking and web technology. Due to this, thousands of job opportunities
                         will be available in several companies. Smartpacey has designed special application oriented
@@ -547,32 +570,34 @@
                         educational and training institute and evolve into a world class Organization.To Develop
                         Smartpacey Branch in all India for build a strong community of Young Entrurpreuner across the
                         country by inspired to young for start own business.</p>
-                   
-                  </div>
+
+                </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <h3>Smartpacey Mission</h3>
                     <div class="section_title_line2"></div>
                     <p>To provide world class Computer Education at very affordable cost and empower students to make
                         them ready to work in industry or to start their own business.</p>
-                    
+
                 </div>
             </div>
         </div>
-        
+
     </div>
-    <section class="cta" >
+    <section class="cta">
         <div class="container">
 
             <div class="row pb">
                 <div class="col-md-6">
                     <h2 style="font-size: 20px;">How to get certified &amp; job ready</h2>
+
                     <div class="media step_card">
                         <div class="media-left">
                             <p class="step">Step<br><span>1</span></p>
                         </div>
                         <div class="media-body">
                             <h4 class="media-heading">Register</h4>
-                            <p>Register online by clicking on the <a href="register-as-student.html" target="_blank">Register Now</a> button from below.</p>
+                            <p>Register online by clicking on the <a href="register-as-student.html"
+                                    target="_blank">Register Now</a> button from below.</p>
                         </div>
                     </div>
                     <div class="media step_card">
@@ -589,8 +614,9 @@
                             <p class="step">Step<br><span>3</span></p>
                         </div>
                         <div class="media-body">
-                            <h4 class="media-heading">Exam & Get Certified</h4>
-                            <p>Get Certified after passing the exam with a Certificate that can be validated online.</p>
+                            <h4 class="media-heading">Exam & Certification</h4>
+                            <p>Get Certification after passing the exam with a Certificate that can be validated online.
+                            </p>
                         </div>
                     </div>
                     <div class="media step_card">
@@ -599,26 +625,27 @@
                         </div>
                         <div class="media-body">
                             <h4 class="media-heading">Internship</h4>
-                            <p>Get Certified after passing the exam with a Certificate that can be validated online.</p>
+                            <p>We provide 2 months internship to our student in Smartpacey Technology for better
+                                experience.</p>
                         </div>
-                    </div> 
+                    </div>
                     <div class="media step_card">
                         <div class="media-left">
                             <p class="step">Step<br><span>5</span></p>
                         </div>
                         <div class="media-body">
                             <h4 class="media-heading">Placement</h4>
-                            <p>Smartpacey provide placement assistance to our students in their job search</p>
+                            <p>Smartpacey provide 100% placement assistance to our students in their job search</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 text-center hideContainer" style="padding-top: 100px;">
-                   <img src="./images/process.png" width="400px" alt="">
+                    <img src="./images/process.png" width="400px" alt="">
                 </div>
             </div>
         </div>
     </section>
-              
+
     <div class="career-prefer" style="background-color: #efefef;">
         <div class="container">
             <div class="row">
@@ -633,7 +660,8 @@
                     <a href="accounting.html">
                         <span class="course-box">
                             <span class="icon-i2">2</span>
-                            <span class="icon-i2-text">Advance Diploma in Financial Accounting <img src="./images/new.gif" width="50px" alt=""> </span>
+                            <span class="icon-i2-text">Advance Diploma in Financial Accounting <img
+                                    src="./images/new.gif" width="50px" alt=""> </span>
                         </span>
                     </a>
                     <a href="software.html">
@@ -651,7 +679,8 @@
                     <a href="advance-diploma.html">
                         <span class="course-box">
                             <span class="icon-i2">5</span>
-                            <span class="icon-i2-text">Full Stack Development Program <img src="./images/new.gif" width="50px" alt=""></span>
+                            <span class="icon-i2-text">Full Stack Development Program <img src="./images/new.gif"
+                                    width="50px" alt=""></span>
                         </span>
                     </a>
                     <a href="advance-diploma.html">
@@ -675,7 +704,8 @@
                     <a href="advance-diploma.html">
                         <span class="course-box">
                             <span class="icon-i2">9</span>
-                            <span class="icon-i2-text">Diploma in Corporate IT Leady <img src="./images/new.gif" width="50px" alt=""> </span>
+                            <span class="icon-i2-text">Diploma in Corporate IT Leady <img src="./images/new.gif"
+                                    width="50px" alt=""> </span>
                         </span>
                     </a>
                 </div>
@@ -696,7 +726,8 @@
                     <a href="certificate-courses.html">
                         <span class="course-box">
                             <span class="icon-i2">3</span>
-                            <span class="icon-i2-text">Certificate Course in Digital Citizen (CCDC)</span>
+                            <span class="icon-i2-text">Certificate Course in Digital Citizen <img src="./images/new.gif"
+                                    width="50px" alt=""> </span>
                         </span>
                     </a>
                     <a href="certificate-courses.html">
@@ -726,7 +757,8 @@
                     <a href="certificate-courses.html">
                         <span class="course-box">
                             <span class="icon-i2">8</span>
-                            <span class="icon-i2-text">Certificate Course in Python  <img src="./images/new.gif" width="50px" alt=""> </span>
+                            <span class="icon-i2-text">Certificate Course in Python <img src="./images/new.gif"
+                                    width="50px" alt=""> </span>
                         </span>
                     </a>
                     <a href="certificate-courses.html">
@@ -742,64 +774,73 @@
                         <summary>
                             <img src="images/spplacement.png" class="img-responsive">
                             <br>
-                            Smartpacey has a dedicated placement department to help students to get job placements in various
+                            Smartpacey has a dedicated placement department to help students to get job placements in
+                            various
                             IT job roles with major companies. With immense pleasure to inform you that Smartpacey has
-                            introduced placement department. 
+                            introduced placement department.
                         </summary>
                         This department will provide assistance to our students in
-                            their job search. . Smratpacey provides 100% Placement Assistance but No job guarantee, neither
-                            with any Private, nor with any government organization.</p>
-                      </details>
-                    
+                        their job search. Smratpacey provides 100% Placement Assistance but No job guarantee, neither
+                        with any Private, nor with any government organization.</p>
+                    </details>
+
                     <a href="placement.html" class="more-btn">READ MORE</a><br>
-                    <button style="padding:10px 0;width: 100%;background-color: #063457;color: white;border: none;margin-bottom: 5px;" data-toggle="modal" data-target="#exampleModal">Sample Certificate</button><br>
-                    <button style="padding:10px 0;width: 100%;background-color: #063457;color: white;border: none;margin-bottom: 5px;" data-toggle="modal" data-target="#exampleModal2">Sample Marksheet</button>
-                    <button style="padding:10px 0;width: 100%;background-color: #063457;color: white;border: none;">Sample Indutrial Training Certificate</button>
+                    <button
+                        style="padding:10px 0;width: 100%;background-color: #063457;color: white;border: none;margin-bottom: 5px;"
+                        data-toggle="modal" data-target="#exampleModal">Sample Certificate</button><br>
+                    <button
+                        style="padding:10px 0;width: 100%;background-color: #063457;color: white;border: none;margin-bottom: 5px;"
+                        data-toggle="modal" data-target="#exampleModal2">Sample Marksheet</button>
+                    <button
+                        style="padding:10px 0;width: 100%;background-color: #063457;color: white;border: none;">Sample
+                        Indutrial Training Certificate</button>
                 </div>
             </div>
         </div>
     </div>
     <!-- Modal -->
-<div class="modal fade certificate" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog  modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-        <img src="images\certificate/ce2.png" width="100%">
-        </div>
-        <!-- <div class="modal-footer">
+    <div class="modal fade certificate" id="exampleModal" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="images\certificate/ce2.png" width="100%">
+                </div>
+                <!-- <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div> -->
-      </div>
+            </div>
+        </div>
     </div>
-  </div>
-  
-  <!-- Modal -->
-<div class="modal fade marksheet" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog  modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-        <img src="images\certificate/ce2.png" width="100%">
-        </div>
-        <!-- <div class="modal-footer">
+
+    <!-- Modal -->
+    <div class="modal fade marksheet" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="images\certificate/ce2.png" width="100%">
+                </div>
+                <!-- <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div> -->
-      </div>
+            </div>
+        </div>
     </div>
-  </div>
 
 
 
-    
+
     <div id="chairman" style="background-size: cover;"><!-- misstion & strength -->
         <div class="container">
             <div class="row">
@@ -828,7 +869,7 @@
     <div class="our_clients">
         <div class="container">
             <div class="heading">
-                <h2>Smartpacey Training Programs</h2>
+                <h2 style="font-size:20px">Smartpacey Training Programs</h2>
                 <div class="section_title_line1"></div>
             </div>
 
@@ -851,12 +892,12 @@
         </div>
     </div>
 
-  
+
 
 
     <div class="our_clients" style="background-color: rgb(244, 244, 244);overflow: hidden;">
         <div class="heading">
-            <h2>Meet Our Team</h2>
+            <h2 style="font-size:20px">Meet Our Team</h2>
             <div class="section_title_line1"></div>
         </div>
         <div class="success_stories row" style="justify-content: center;display: flex;padding-bottom: 20px;">
@@ -869,13 +910,15 @@
                             <img src="https://www.smartpacey.com/images/gallery/thumb/vs.jpg"
                                 style="width: 100px !important;height: 100px !important;margin-top: -80px;" alt="">
                             <h4 style="margin-top: 0;margin-bottom: 0;font-family: 'Bebas Neue', cursive !important;">
-                                Vishnu Shinde</h4>
+                                Mr.Vishnu Shinde</h4>
                             <h5
                                 style="text-align: center;margin-top: 10px;font-weight: bold;line-height: 12px;color:rgb(76, 76, 76);">
-                                Training Head</h5>
-                            <p style="font-size: 10px;line-height: 15px;">He completed his education as Diploma
-                                Mechanical. In India and abroad lot of investments are being made by several companies
-                                in the field of software, hardware, networking and web technology. </p>
+                                ( Training Head )</h5>
+                            <p style="font-size: 10px;line-height: 15px;">I am Vishnu Shinde working as Smartpacey
+                                Training Head
+                                since last 7 years working in Training Department
+                                I have not only changed myself but my aim is to change the lives of many students
+                                through training. </p>
                             <button style="font-size: 12px;padding:  3px 10px;">Learn More</button>
                         </div>
                     </div>
@@ -968,7 +1011,7 @@
                                 <i class="glyphicon glyphicon-envelope"></i>
                             </div>
                             <div class="icon-i4-text">
-                                 <p>smartpacey@gmail.com (Education)<br>
+                                <p>smartpacey@gmail.com (Education)<br>
                                     smartpaceyjobs@gmail.com (Placement Services)<br>
                                     smartpaceytech@gmail.com (IT Services)
                                 </p>
@@ -993,7 +1036,7 @@
                             </div>
                             <div class="icon-i4-text">
                                 <p>Head Office Address<br>Plot No. 6,
-                                    Kokanwadi Area, Opp. Jay Tower, Chh. Sambhajinagar (MH) - 431001 (India)</p>
+                                    Kokanwadi Area, Opp. Jay Tower, <br> Chh. Sambhajinagar (MH) - 431001 (India)</p>
                             </div>
                         </address>
                     </div>
