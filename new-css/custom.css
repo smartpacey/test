@@ -319,7 +319,7 @@ ul.option li span{display:-moz-deck; display:-webkit-box; width:80%; text-transf
 .client-testimonials .img-box img{max-width:100%;}
 
 .prtnr-logo {float:left; width:100%; background: url(../images/parallax_two.jpg) no-repeat 50% 0 fixed; margin:0 auto; max-width: 1920px; padding:0; overflow:hidden; margin-top:0px;}
-.prtnr-logo .prtnrlogo-text{background: #11b5d3; float:left; width:42%; padding:20px 0 20px 100px; position:relative;}
+.prtnr-logo .prtnrlogo-text{background: #11b5d3; float:left; width:55%; padding:20px 0 20px 0px; position:relative;}
 .prtnr-logo .prtnrlogo-text::before{background:#11b5d3; content:""; height:100%; position:absolute; right:-45px; top:0px; transform:skew(-20deg); width:90px;}
 .prtnr-logo .prtnrlogo-text em{font-size:30px; color:#fff; font-style:normal; text-transform:uppercase;}
 .prtnr-logo .prtnrlogo-text h1{color:#fff; font-size:40px; margin-top:0;}

@@ -51,7 +51,7 @@ a.logon {
 }
 p {
 	font-weight: 400;
-	font-size: 14px;
+	font-size: 12px;
 	line-height: 1.5;
 	color: #555555;
 }
@@ -78,13 +78,14 @@ font-size: 18px;
 }
 
 p.step {
+    margin-top: 2px;
 	background: #337ab7;
 	color: #fff;
 	border-radius: 50%;
 	padding: 4px 16px;
 	text-align: center;
-	line-height: 24px;
-	font-size: 13px;
+	line-height: 17px;
+	font-size: 7px;
 	border: 10px solid #d1eefe;
 }
 
@@ -113,7 +114,7 @@ p.step span {
 
 h4 {
 	padding-top: 0px;
-	font-size: 1.8rem;
+	font-size: 15px;
 	color: #101115;
 	font-weight: bold;
 }
@@ -524,7 +525,7 @@ span.subtitle.yellow-color {
 .cta {
 	width: 100%;
 	float: left;
-	padding-top: 70px;
+	padding-top: 10px;
 }
 
 .course-price {

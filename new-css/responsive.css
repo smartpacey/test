@@ -12,7 +12,7 @@
 
 @media screen and (max-width:992px){
 	body{font-size:14px;}
-	.navbar-brand.education-logo{top:-8px; width:88px;}
+	.navbar-brand.education-logo{top:-8px; width:122px;}
 	.nav > li > a{padding:10px;}
 	#banner{margin-top:70px;}
 	ul.banner{min-height:207px;}
@@ -61,4 +61,5 @@
 	ul.banner{min-height:165px;}
 	footer iframe{height:682px;}
 	.training-partner-logos li{width:46%;}
+	.navbar-brand.education-logo{top:-68px!Important}
 }
